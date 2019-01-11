@@ -29,7 +29,7 @@
     "uilayout": "editor-terminal"
   },
   "backend": {
-    "imageid": "ubuntu"
+    "imageid": "docker"
   },
   "assets": {
       "host01": [{
