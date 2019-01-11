@@ -1,5 +1,6 @@
 {
   "title": "Test1",
+  "time": "10 minutes",
   "description": "Bla",
   "details": {
     "steps": [
@@ -17,6 +18,7 @@
       }
     ],
     "intro": {
+      "courseData": "env-init.sh",
       "text": "intro.md"
     },
     "finish": {
@@ -28,5 +30,12 @@
   },
   "backend": {
     "imageid": "ubuntu"
-  }
+  },
+  "assets": {
+      "host01": [{
+          "file": "*",
+          "target": "/root/pyats/"
+        }
+      ]
+    },
 }
