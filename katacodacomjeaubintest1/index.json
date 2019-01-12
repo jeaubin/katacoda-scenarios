@@ -29,7 +29,7 @@
     "uilayout": "editor-terminal"
   },
   "backend": {
-    "imageid": "python"
+    "imageid": "ubuntu"
   },
   "assets": {
       "host01": [{
