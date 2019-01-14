@@ -11,4 +11,7 @@ Let's verify it's been installed correctly.
 
 We can see all Genie packages and all pyATS packages.
 
+`python`{{execute}}
+`import genie`{{execute}}
+
 More information on our [Genie Website](https://pubhub.devnetcloud.com/media/pyats-packages/docs/genie/installation/installation.html)
