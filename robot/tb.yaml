@@ -1,0 +1,39 @@
+testbed: 
+  name: 'ma_new_tb'
+devices:
+  nx-osv-1:
+      alias: 'uut'
+      type: 'Nexus'
+      os: 'nxos'
+      tacacs:
+          login_prompt: "login:"
+          password_prompt: "Password:"
+          username: "admin"
+      passwords:
+          tacacs: Cisc0123
+          enable: admin
+          line: admin
+      connections:
+          defaults:
+            class: 'unicon.Unicon'
+          a:
+              command: python -m unicon.mock.mock_device --os nxos --mock_data_dir original_data/nxos --state execute
+              protocol: unknown
+  csr1000v-1:
+      type: asr1k
+      os: "iosxe"
+      alias: 'helper'
+      tacacs:
+          login_prompt: 'login:'
+          password_prompt: 'Password:'
+          username: cisco
+      passwords:
+          tacacs: cisco
+          enable: cisco
+          line: cisco
+      connections:
+          defaults:
+            class: 'unicon.Unicon'
+          a:
+              command: python -m unicon.mock.mock_device --os iosxe --mock_data_dir original_data/csr --state execute
+              protocol: unknown

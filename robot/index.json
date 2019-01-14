@@ -1,0 +1,49 @@
+{
+  "title": "Operational state comparison with Genie and RobotFramework",
+  "time": "5 minutes",
+  "description": "Compare Operational state of a device before and after modification",
+  "details": {
+    "steps": [
+      {
+        "title": "Step 1 - Manual investigation",
+        "text": "step1.md"
+      },
+      {
+        "title": "Step 2 - Initial Robot snapshot",
+        "text": "step2.md",
+        "courseData": "step2-init.sh",
+	"code": "load_env.sh"
+      },
+      {
+        "title": "Step 3 - Device Modification",
+        "text": "step3.md"
+      },
+      {
+        "title": "Step 4 - Second snapshot and comparison",
+        "text": "step4.md",
+        "courseData": "step4-init.sh",
+	"code": "load_env.sh"
+      }
+    ],
+    "intro": {
+      "text": "intro.md",
+      "courseData": "env-init.sh"
+    },
+    "finish": {
+      "text": "finish.md"
+    }
+  },
+  "environment": {
+    "uilayout": "editor-terminal"
+  },
+  "backend": {
+    "imageid": "ubuntu"
+  },
+  "assets": {
+      "host01": [{
+          "file": "*",
+          "target": "/root/pyats/"
+        }
+      ]
+  }
+}
