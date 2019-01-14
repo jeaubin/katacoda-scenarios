@@ -40,7 +40,7 @@
     "imageid": "ubuntu"
   },
   "assets": {
-      "host01": [{
+      "client": [{
           "file": "*",
           "target": "/root/"
         }
