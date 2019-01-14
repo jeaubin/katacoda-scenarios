@@ -41,7 +41,7 @@
   },
   "assets": {
       "client": [{
-          "file": "*",
+          "file": "initial_compare.robot",
           "target": "~/"
         }
       ]
