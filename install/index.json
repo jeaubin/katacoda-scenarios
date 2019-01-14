@@ -1,15 +1,15 @@
 {
-  "title": "Genie and pyATS Installation",
+  "title": "Genie Installation",
   "time": "5 minutes",
-  "description": "Install Genie and pyATS",
+  "description": "Step to install Genie",
   "details": {
     "steps": [
       {
-        "title": "Step 1",
+        "title": "Step 1 - Virtual environment",
         "text": "step1.md"
       },
       {
-        "title": "Step 2",
+        "title": "Step 2 - Installing Genie",
         "text": "step2.md"
       }
     ],

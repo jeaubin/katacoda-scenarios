@@ -1,6 +1,3 @@
-As a prerequiste you must have python3 installed on your machine and be on a
-Linux or Macos.
-
 ## Creating Virtual environment
 
 [Virtual Environment](https://docs.python.org/3/tutorial/venv.html) is the
@@ -27,3 +24,5 @@ Note: you can create a virtual environment with the following command
 python3 -m venv virtual
 
 However this environment does not support it and would requires extra steps.
+
+
