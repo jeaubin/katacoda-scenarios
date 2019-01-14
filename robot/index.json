@@ -44,6 +44,11 @@
           "file": "initial_compare.robot",
           "target": "~/"
         }
+      ],
+      "host01": [{
+          "file": "initial_compare.robot",
+          "target": "~/"
+        }
       ]
   }
 }
