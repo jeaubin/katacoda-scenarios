@@ -42,7 +42,7 @@
   "assets": {
       "client": [{
           "file": "*",
-          "target": "/root/"
+          "target": "~/"
         }
       ]
   }
