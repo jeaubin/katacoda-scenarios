@@ -11,8 +11,7 @@
       {
         "title": "Step 2 - Initial Robot snapshot",
         "text": "step2.md",
-        "courseData": "step2-init.sh",
-	"code": "load_env.sh"
+	"code": "step2-env.sh"
       },
       {
         "title": "Step 3 - Device Modification",
@@ -21,8 +20,7 @@
       {
         "title": "Step 4 - Second snapshot and comparison",
         "text": "step4.md",
-        "courseData": "step4-init.sh",
-	"code": "load_env.sh"
+	"code": "step4-env.sh"
       }
     ],
     "intro": {
