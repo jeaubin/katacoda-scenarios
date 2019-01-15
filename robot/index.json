@@ -11,6 +11,7 @@
       {
         "title": "Step 2 - Initial Robot snapshot",
         "text": "step2.md",
+        "courseData": "env-step2.sh",
 	"code": "step2-env.sh"
       },
       {

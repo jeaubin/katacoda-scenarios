@@ -17,9 +17,9 @@ devices:
           defaults:
             class: 'unicon.Unicon'
           a:
-              protocol: unknown
-              ip: unknown
-              port: unknown
+              protocol: telnet
+              ip: "172.25.192.90"
+              port: 17002
   csr1000v-1:
       type: asr1k
       os: "iosxe"
@@ -36,6 +36,6 @@ devices:
           defaults:
             class: 'unicon.Unicon'
           a:
-              protocol: unknown
-              ip: unknown
-              port: unknown
+              protocol: telnet
+              ip: "172.25.192.90"
+              port: 17000

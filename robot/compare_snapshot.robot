@@ -24,4 +24,7 @@ Connect
     connect to device "csr1000v-1"
 
 Profile bgp & ospf on uut
-    Profile the system for "bgp;config;interface;platform;ospf" on devices "nx-osv-1;csr1000v-1" as "./initial_snapshot"
+    Profile the system for "bgp;config;interface;platform;ospf" on devices "nx-osv-1;csr1000v-1" as "./second_snapshot"
+
+Compare snapshots
+    Compare profile "./initial_snapshot" with "./second_snapshot" on devices "nx-osv-1;csr1000v-1"
