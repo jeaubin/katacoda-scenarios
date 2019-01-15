@@ -35,6 +35,7 @@ The same can be done on the other device
 `show running-config`{{execute}}
 `show interface brief`{{execute}}
 `show ip ospf`{{execute}}
-`exit()`{{execute}}
+
+Type cntrl+d to get out of the device.
 
 Remembering all the configurations and all the state is not an easy task.
