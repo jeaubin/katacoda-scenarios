@@ -27,6 +27,7 @@ In this learning lab you are going to learn:
 
 Genie is a python library solution provided by Cisco which contains all the
 tools needed for Network Test Automation.
+
 Make sure to go our [official website](https://developer.cisco.com/site/pyats)
 and our [Genie
 Installation](https://www.katacoda.com/jeaubin/scenarios/install) training to
