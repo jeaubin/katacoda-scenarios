@@ -5,20 +5,20 @@
   "details": {
     "steps": [
       {
-        "title": "Step 1 - Manual investigation",
+        "title": "Step 1 - Without automation - Collect information",
         "text": "step1.md"
       },
       {
-        "title": "Step 2 - Manual modification",
+        "title": "Step 2 - Without automation - Disaster",
         "text": "step2.md"
       },
       {
-        "title": "Step 3 - Initial Robot snapshot",
+        "title": "Step 3 - With Genie - Collect information",
         "text": "step3.md",
 	"code": "step2-env.sh"
       },
       {
-        "title": "Step 4 - Second snapshot and comparison",
+        "title": "Step 4 - With Genie - Disa...all is good",
         "text": "step4.md",
 	"code": "step4-env.sh"
       }

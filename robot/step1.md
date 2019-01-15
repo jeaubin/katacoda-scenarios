@@ -26,7 +26,7 @@ as normal devices, with limited commands.
 
 `mock_device_cli --os nxos --mock_data_dir /root/katacoda-scenarios/robot/original_data/nxos --state execute`{{execute}}
 
-We can send a few show command to understand the topology and configuration
+We can send a few show commands to understand the topology and configuration
 
 `show running-config`{{execute}}
 `show interface`{{execute}}

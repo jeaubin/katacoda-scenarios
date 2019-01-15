@@ -1,5 +1,3 @@
-# Initial Robot snapshot
-
 Let's use RobotFramework and Genie to learn and verify our network!
 
 The first step is to learn the good device state.

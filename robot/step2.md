@@ -1,5 +1,3 @@
-## Device state has changed
-
 **Oh no!**
 
 All of sudden, the network is not operating as expected! Without any

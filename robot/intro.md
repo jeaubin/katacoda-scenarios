@@ -3,9 +3,9 @@
 This Katacode training simulates a real life scenario of a Network engineer.
 
 A major obstacle faced by all network engineers is keeping their network up and
-running continuously. Genie can help with that!
+health. Genie can help with that!
 
-1) Take a snapshot of your network when you know your network is in good state
+1) Take a snapshot of your network when your network is in good state
 
 2) Re-take a snapshot periodically and compare with initial snapshot
 
@@ -13,8 +13,9 @@ running continuously. Genie can help with that!
 
 Genie provides multiple ways to do this,  one of them is with
 [RobotFramework](https://robotframework.org). RobotFramework is an English
-keyword based automation framework, with a Genie Library to automate your
-network.
+keyword based automation framework, with a [Genie
+Library](https://pubhub.devnetcloud.com/media/pyats-packages/docs/genie/robot/index.html)
+to automate your network.
 
 ## Objectives
 

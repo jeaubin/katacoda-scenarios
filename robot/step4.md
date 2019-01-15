@@ -1,5 +1,3 @@
-## Comparison
-
 **Oh No**
 
 All of sudden, the network is not operating as expected! Without any
