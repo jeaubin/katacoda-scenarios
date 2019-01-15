@@ -6,6 +6,6 @@ git clone https://github.com/jeaubin/katacoda-scenarios.git
 pip install genie genie.libs.robot asyncssh
 
 apt-get update
-apt-get install nginx
+apt-get install nginx -y
 service nginx start
 

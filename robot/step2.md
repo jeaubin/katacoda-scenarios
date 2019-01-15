@@ -14,3 +14,4 @@ Then let's start the run
 `robot --outputdir  /var/www/html/initial_run  /root/katacoda-scenarios/robot/initial_compare.robot`{{execute}}
 
 
+Log can be viewed here: https://[[HOST_SUBDOMAIN]]-80-[[KATACODA_HOST]].environments.katacoda.com/initial_run/log.html
