@@ -1,12 +1,23 @@
-## Device state has changed
+# Initial Robot snapshot
 
-All of sudden, some configuration was modified and the device state has
-changed. Without any automation, can you figure out what happened?
+Let's use RobotFramework and Genie to learn and verify our network!
 
-`mock_device_cli --os nxos --mock_data_dir /root/katacoda-scenarios/robot/modified_data/nxos --state execute`{{execute}}
+The first step is to learn the good device state.
 
-`mock_device_cli --os iosxe --mock_data_dir /root/katacoda-scenarios/robot/modified_data/csr --state execute`{{execute}}
+Let's take a look at the robot testscript. open the
+`katacoda-scenario/robot/initial_compare.robot` in the editor windows and
+examing it's content.
 
-Type ctrl+d to get out of the device.
+It's English commands which are easy to read. The script will:
 
+* Load Genie Library
+* Connect to our two devices
+* Learn bgp, interface, platform, ospf and the device configuration and save it to file.
 
+Let's start it
+
+`robot --outputdir  /var/www/html/initial_run  /root/katacoda-scenarios/robot/initial_compare.robot`{{execute}}
+
+Log can be viewed here: https://[[HOST_SUBDOMAIN]]-80-[[KATACODA_HOST]].environments.katacoda.com/initial_run/log.html
+
+We are now ready for our disaster to happen!

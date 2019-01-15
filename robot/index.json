@@ -9,13 +9,13 @@
         "text": "step1.md"
       },
       {
-        "title": "Step 2 - Initial Robot snapshot",
-        "text": "step2.md",
-	"code": "step2-env.sh"
+        "title": "Step 2 - Manual modification",
+        "text": "step2.md"
       },
       {
-        "title": "Step 3 - Device Modification",
-        "text": "step3.md"
+        "title": "Step 3 - Initial Robot snapshot",
+        "text": "step3.md",
+	"code": "step2-env.sh"
       },
       {
         "title": "Step 4 - Second snapshot and comparison",

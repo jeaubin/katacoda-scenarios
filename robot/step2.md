@@ -1,17 +1,15 @@
-# Initial Robot snapshot
+## Device state has changed
 
-With automation you can capture huge amount of data, understand it then compare
-it all. [RobotFramework](http://robotframework.org/) is a great automation
-framework to get started with automation as minimal programing knowledge is
-needed.
+**Oh no!**
 
-Let's take a look at the robot testscript. open the
-`robot/initial_compare.robot` in the editor windows and
-examing it's content.
+All of sudden, the network is not operating as expected! Without any
+automation, can you figure out what happened without going to the previous
+step. 
 
-Then let's start the run
+`mock_device_cli --os nxos --mock_data_dir /root/katacoda-scenarios/robot/modified_data/nxos --state execute`{{execute}}
 
-`robot --outputdir  /var/www/html/initial_run  /root/katacoda-scenarios/robot/initial_compare.robot`{{execute}}
+`mock_device_cli --os iosxe --mock_data_dir /root/katacoda-scenarios/robot/modified_data/csr --state execute`{{execute}}
 
+**NOTE: Type Ctrl+d to get out of the device.**
 
-Log can be viewed here: https://[[HOST_SUBDOMAIN]]-80-[[KATACODA_HOST]].environments.katacoda.com/initial_run/log.html
+Let's how we handle this in 2019 with Genie!

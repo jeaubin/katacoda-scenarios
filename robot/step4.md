@@ -1,10 +1,30 @@
 ## Comparison
 
-Let's use automation to figure out what happened!
+**Oh No**
+
+All of sudden, the network is not operating as expected! Without any
+automation, can you figure out what happened without going to the previous
+step. 
+
+**Yes!**
+
+Let's use automation to figure out what happened!  Take a look at the robot
+testscript. open the `katacoda-scenario/robot/compare_snapshot.robot` in the
+editor windows and examing it's content.
+
+The script will:
+
+* Load Genie Library
+* Connect to our two devices
+* Learn bgp, interface, platform, ospf and the device configuration and save it to file.
+* And compare the new snapshot with the original snapshot!
 
 `robot --outputdir  /var/www/html/compare_run  /root/katacoda-scenarios/robot/compare_snapshot.robot`{{execute}}
 
-We can see the robot script has failed.
-
+We can see the robot script has failed. Open the log and you can see the
+configuration was changed which is changing the operation state of our
+protocol.
 
 Log can be viewed here: https://[[HOST_SUBDOMAIN]]-80-[[KATACODA_HOST]].environments.katacoda.com/compare_run/log.html
+
+We can now revert the configuration and rerun our script to make sure we are back in business!

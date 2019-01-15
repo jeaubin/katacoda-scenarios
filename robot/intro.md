@@ -33,4 +33,6 @@ and our [Genie
 Installation](https://www.katacoda.com/jeaubin/scenarios/install) training to
 get started!
 
+You can reach us at pyats-support-ext@cisco.com
+
 [All Genie trainings](https://www.katacoda.com/jeaubin)
