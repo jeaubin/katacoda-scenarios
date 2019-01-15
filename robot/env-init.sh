@@ -4,3 +4,8 @@ source virtual/bin/activate
 # Work around until Katacoda support answer
 git clone https://github.com/jeaubin/katacoda-scenarios.git
 pip install genie genie.libs.robot asyncssh
+
+apt-get update
+apt-get install nginx
+service nginx start
+
