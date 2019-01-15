@@ -11,6 +11,6 @@ examing it's content.
 
 Then let's start the run
 
-`robot --outputdir  run1 initial_compare.robot`{{execute}}
+`robot --outputdir  run1  /root/katacoda-scenarios/robot/initial_compare.robot`{{execute}}
 
 
