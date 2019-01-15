@@ -6,7 +6,9 @@ A major struggle of all network engineers is to keep their network up and
 running. Genie can help you with that!
 
 1) Take a snapshot of your network when you know your network is in good state
+
 2) Re-take snapshot periodically and compare with initial snapshot
+
 3) When something changed, be alerted.
 
 Genie provides multiple ways to do this,  one of them is with
@@ -23,11 +25,10 @@ In this learning lab you are going to learn:
 
 ## More information
 
-Genie is a python library solution which contains all the tools needed for
-Network Test Automation. Make sure to go through [Genie Installation - Getting
-started](https://www.katacoda.com/jeaubin/scenarios/install) first to get
-started.
+Genie is a python library solution provided by Cisco which contains all the
+tools needed for Network Test Automation. Make sure to go through [Genie
+Installation - Getting
+started](https://www.katacoda.com/jeaubin/scenarios/install) and our official
+website to get started!
 
 [All Genie trainings](https://www.katacoda.com/jeaubin)
-
-More information on our [official website](https://developer.cisco.com/site/pyats/)
