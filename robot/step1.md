@@ -1,4 +1,8 @@
-# Step 1 - Manual investigation
+**NOTE:** the installation of all of the libraries is happening in the
+background, and may take a minute to complete.
+
+## Goal
+This scenario 
 
 ## Getting Ready
 To get you started quickly, we've created a virtualenv and installed Genie.
@@ -7,8 +11,6 @@ You can activate the virtualenv by running the following commands
 
 `source virtual/bin/activate`{{execute}}
 
-**NOTE:** the installation of all of the libraries is happening in the background, and may take a minute to complete.  So take your time and
-read through the following information, as this is fundamental to your understanding.
 
 ## Manual investigation
 

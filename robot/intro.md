@@ -1,41 +1,18 @@
-# Introduction to Genie
+# Use Cisco Genie to learn and compare your network with RobotFramework
 
-Genie is a python library solution which contains all the tools needed for
-Network Test Automation.
+This katacode training simulate a real life scenario of a Network engineer.
 
-Genie comes for different type of folks:
+A major struggle of all network engineers is to keep their network up and
+running. Genie can help you with that!
 
-1) I dont know python or automation,  but I know Linux and I want to automate my network
-      -> Genie has a cli which uses the Python library in the backend to learn
-         the network, compare and do task.
+1) Take a snapshot of your network when you know your network is in good state
+2) Re-take snapshot periodically and compare with initial snapshot
+3) When something changed, be alerted.
 
-2) I dont know much python, but I would like to start with automation
-      -> [Robot Framework](http://robotframework.org) is a great introduction to
-         automation. We've created a library for you to get started with Network
-         automation.
-    
-3) I want to automate with Python. This gives the most power and flexibility.
-      -> pyATS and Genie are ready for you! pyATS is a testframework which allow
-         to run scripts and Genie is all you need to get your Network test Automation.
-
-
-This training scenario is for the RobotFramework Library.
-
-
-Genie is a Python library solution for PyATS which contains all the tools
-needed for Network Test Automation. Genie bundled with the modular architecture
-of the PyATS framework accelerates and simplifies development of network test
-automation, while leveraging all the perks of the Python programming language
-and promoting the development of agnostic libraries. Genie is redefining how
-network test scripters interact with devices through libraries and avoiding
-functional programming.
-
-Genie is used internally within Cisco for automating network testing and has
-also been released externally through Cisco DevNet. This means that the same
-tests which are used internally at Cisco during product development can also be
-executed externally on a customer setup. This is massive news for automation
-within and outside of Cisco!
-
+Genie provides multiple ways to do this,  one of them is with
+[RobotFramework](https://robotframework.org). RobotFramework is an english
+keyword based automation framework, with a Genie Library to automate your
+network.
 
 ## Objectives
 
@@ -43,5 +20,14 @@ In this learning lab you are going to learn:
 
 * How to use Genie Robot Library
 * Take snapshot of your devices and compare them to see what has changed
+
+## More information
+
+Genie is a python library solution which contains all the tools needed for
+Network Test Automation. Make sure to go through [Genie Installation - Getting
+started](https://www.katacoda.com/jeaubin/scenarios/install) first to get
+started.
+
+[All Genie trainings](https://www.katacoda.com/jeaubin)
 
 More information on our [official website](https://developer.cisco.com/site/pyats/)

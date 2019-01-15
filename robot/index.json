@@ -1,6 +1,6 @@
 {
   "title": "Operational state comparison with Genie and RobotFramework",
-  "time": "5 minutes",
+  "time": "10 minutes",
   "description": "Compare Operational state of a device before and after modification",
   "details": {
     "steps": [
