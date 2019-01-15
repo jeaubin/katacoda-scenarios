@@ -1,7 +1,7 @@
 This training demonstrated that Genie can be very useful as a tool help you
-manage your device.
+manage your devices.
 
-This training can be clone on
+This training can be viewed on
 [github](https://github.com/jeaubin/katacoda-scenarios) under the directory
 robot.
 
