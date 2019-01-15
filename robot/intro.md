@@ -1,6 +1,6 @@
 # Use Cisco Genie to learn and verify your network with RobotFramework
 
-This Katacode training simulates a real life scenario of a Network engineer.
+This Katacode training simulates a real life scenario of a network engineer.
 
 A major obstacle faced by all network engineers is keeping their network up and
 health. Genie can help with that!
