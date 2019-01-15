@@ -17,8 +17,9 @@ devices:
           defaults:
             class: 'unicon.Unicon'
           a:
-              command: mock_device_cli --os nxos --mock_data_dir /root/katacoda-scenarios/robot/original_data/nxos --state execute
               protocol: unknown
+              ip: unknown
+              port: unknown
   csr1000v-1:
       type: asr1k
       os: "iosxe"
@@ -35,5 +36,6 @@ devices:
           defaults:
             class: 'unicon.Unicon'
           a:
-              command: mock_device_cli --os iosxe --mock_data_dir /root/katacoda-scenarios/robot/original_data/csr --state execute
               protocol: unknown
+              ip: unknown
+              port: unknown
