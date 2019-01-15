@@ -23,9 +23,10 @@ Let's first connect to our device (This is a mocked device, so will use python i
 We can send a few show command to understand the topology and configuration
 
 `show running-config`{{execute}}
-`show interface brief`{{execute}}
-`show ip ospf`{{execute}}
-`exit()`{{execute}}
+`show interface`{{execute}}
+`show ip ospf vrf all`{{execute}}
+
+Type cntrl+d to get out of the device.
 
 The same can be done on the other device
 
