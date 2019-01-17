@@ -3,7 +3,7 @@ Python library, without knowing python or automation.
 
 The first step is to learn the good device state.
 
-`genie learn ospf interface bgp platform --testbed-file tb.yaml --output learnt`{{execute}}
+`genie learn ospf interface bgp platform --testbed-file /root/katacoda-scenarios/compare/tb.yaml --output learnt`{{execute}}
 
 This cli uses the Genie cli to learn the whole Ospf, Interface, Bgp and your
 platform and saving it to file. 

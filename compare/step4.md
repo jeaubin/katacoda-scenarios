@@ -6,7 +6,7 @@ step.
 
 **Yes!**
 
-`genie learn ospf interface bgp platform --testbed-file tb.yaml --output disaster`{{execute}}
+`genie learn ospf interface bgp platform --testbed-file /root/katacoda-scenarios/compare/tb.yaml --output disaster`{{execute}}
 
 `genie diff learnt disaster`{{execute}}
 
