@@ -25,13 +25,13 @@
       },
       {
         "title": "Step 5 - With Genie Robot - Collect information",
-        "text": "step3.md",
-	"code": "step3-env.sh"
+        "text": "step5.md",
+	"code": "step5-env.sh"
       },
       {
         "title": "Step 6 - With Genie Robot - ...all is good",
-        "text": "step4.md",
-	"code": "step4-env.sh"
+        "text": "step6.md",
+	"code": "step6-env.sh"
       }
     ],
     "intro": {
