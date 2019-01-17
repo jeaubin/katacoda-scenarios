@@ -1,5 +1,5 @@
 {
-  "title": "Genie Compares device operational",
+  "title": "Genie compares device operational state",
   "time": "10 minutes",
   "description": "Compare Operational state of a device before and after modification",
   "details": {
@@ -16,7 +16,7 @@
       {
         "title": "Step 3 - With Genie Cli - Collect information",
         "text": "step3.md",
-	"code": "step2-env.sh"
+	"code": "step3-env.sh"
       },
       {
         "title": "Step 4 - With Genie - ...all is good",

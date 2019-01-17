@@ -36,7 +36,7 @@ execute:
       \n\r\n    Wait for IGP convergence is not configured\r\n\r\n\r\n    Nexthop\
       \ trigger-delay\r\n        critical 3000 ms\r\n        non-critical 10000 ms"
     show bgp vrf all all: "BGP routing table information for VRF default, address\
-      \ family IPv4 Unicast\r\nBGP table version is 8, local router ID is 10.2.2.2\r\
+      \ family IPv4 Unicast\r\nBGP table version is 9, local router ID is 10.2.2.2\r\
       \nStatus: s-suppressed, x-deleted, S-stale, d-dampened, h-history, *-valid,\
       \ >-best\r\nPath type: i-internal, e-external, c-confed, l-local, a-aggregate,\
       \ r-redist, I-injected\r\nOrigin codes: i - IGP, e - EGP, ? - incomplete, |\
@@ -53,29 +53,28 @@ execute:
       \ never, using 0.0.0.0/0\r\nMetric next advertise: Never\r\nRNH epoch: 0\r\n\
       \r\nNexthop: 10.1.1.1, Flags: 0x1, Refcount: 1, IGP cost: 41\r\nIGP Route type:\
       \ 0, IGP preference: 110\r\nAttached nexthop: 10.0.2.1, Interface: Ethernet2/2\r\
-      \nAttached nexthop: 10.0.1.1, Interface: Ethernet2/1\r\nNexthop is not-attached\
-      \ not-local reachable not-labeled\r\nNexthop last resolved: 00:01:51, using\
-      \ 10.1.1.1/32\r\nMetric next advertise: Never\r\nRNH epoch: 1\r\nIPv6 Next-hop\
-      \ table\r\n\r\nNext Hop table for VRF default, address family IPv6 Unicast:\r\
-      \nNext-hop trigger-delay(miliseconds)\r\n  Critical: 3000 Non-critical: 10000\r\
-      \nIPv4 Next-hop table\r\nIPv6 Next-hop table"
+      \nNexthop is not-attached not-local reachable not-labeled\r\nNexthop last resolved:\
+      \ 00:00:44, using 10.1.1.1/32\r\nMetric next advertise: Never\r\nRNH epoch:\
+      \ 2\r\nIPv6 Next-hop table\r\n\r\nNext Hop table for VRF default, address family\
+      \ IPv6 Unicast:\r\nNext-hop trigger-delay(miliseconds)\r\n  Critical: 3000 Non-critical:\
+      \ 10000\r\nIPv4 Next-hop table\r\nIPv6 Next-hop table"
     show bgp vrf all all summary: "BGP summary information for VRF default, address\
       \ family IPv4 Unicast\r\nBGP router identifier 10.2.2.2, local AS number 65000\r\
-      \nBGP table version is 8, IPv4 Unicast config peers 1, capable peers 1\r\n2\
+      \nBGP table version is 9, IPv4 Unicast config peers 1, capable peers 1\r\n2\
       \ network entries and 2 paths using 288 bytes of memory\r\nBGP attribute entries\
       \ [2/288], BGP AS path entries [0/0]\r\nBGP community entries [0/0], BGP clusterlist\
       \ entries [0/0]\r\n\r\nNeighbor        V    AS MsgRcvd MsgSent   TblVer  InQ\
-      \ OutQ Up/Down  State/PfxRcd\r\n10.1.1.1        4 65000    1532    1392    \
-      \    8    0    0 00:01:54 1         \r\n\r\nBGP summary information for VRF\
+      \ OutQ Up/Down  State/PfxRcd\r\n10.1.1.1        4 65000    5098    4630    \
+      \    9    0    0    2d06h 1         \r\n\r\nBGP summary information for VRF\
       \ default, address family IPv6 Unicast"
     show bgp vrf default all neighbors: "BGP neighbor is 10.1.1.1,  remote AS 65000,\
       \ ibgp link, Peer index 1\r\n  BGP version 4, remote router ID 10.1.1.1\r\n\
-      \  BGP state = Established, up for 00:01:54\r\n  Using loopback0 as update source\
-      \ for this peer\r\n  Last read 00:00:16, hold time = 180, keepalive interval\
-      \ is 60 seconds\r\n  Last written 00:00:53, keepalive timer expiry due 00:00:06\r\
-      \n  Received 1532 messages, 0 notifications, 0 bytes in queue\r\n  Sent 1392\
+      \  BGP state = Established, up for 2d06h\r\n  Using loopback0 as update source\
+      \ for this peer\r\n  Last read 00:00:20, hold time = 180, keepalive interval\
+      \ is 60 seconds\r\n  Last written 00:00:47, keepalive timer expiry due 00:00:12\r\
+      \n  Received 5098 messages, 0 notifications, 0 bytes in queue\r\n  Sent 4630\
       \ messages, 0 notifications, 0 bytes in queue\r\n  Connections established 2,\
-      \ dropped 1\r\n  Last reset by us 00:50:19, due to other configuration change\r\
+      \ dropped 1\r\n  Last reset by us 2d06h, due to other configuration change\r\
       \n  Last reset by peer never, due to No error\r\n\r\n  Neighbor capabilities:\r\
       \n  Dynamic capability: advertised (mp, refresh, gr) \r\n  Dynamic capability\
       \ (old): advertised \r\n  Route refresh capability (new): advertised received\
@@ -90,17 +89,17 @@ execute:
       \                          Sent               Rcvd\r\n  Opens:             \
       \            2                  2  \r\n  Notifications:                 0  \
       \                0  \r\n  Updates:                       4                 \
-      \ 4  \r\n  Keepalives:                 1386               1526  \r\n  Route\
+      \ 4  \r\n  Keepalives:                 4624               5092  \r\n  Route\
       \ Refresh:                 0                  0  \r\n  Capability:         \
-      \           0                  0  \r\n  Total:                      1392   \
-      \            1532  \r\n  Total bytes:               26440              29114\
+      \           0                  0  \r\n  Total:                      4630   \
+      \            5098  \r\n  Total bytes:               87962              96868\
       \  \r\n  Bytes in queue:                0                  0  \r\n\r\n  For\
-      \ address family: IPv4 Unicast\r\n  BGP table version 8, neighbor version 8\r\
+      \ address family: IPv4 Unicast\r\n  BGP table version 9, neighbor version 9\r\
       \n  1 accepted paths consume 80 bytes of memory\r\n  1 sent paths\r\n  Third-party\
       \ Nexthop will not be computed.\r\n\r\n  Local host: 10.2.2.2, Local port: 20419\r\
       \n  Foreign host: 10.1.1.1, Foreign port: 179\r\n  fd = 60"
-    show bgp vrf default all neighbors 10.1.1.1 advertised-routes: "\r\nPeer 10.1.1.1\
-      \ routes for address family IPv4 Unicast:\r\nBGP table version is 8, local router\
+    show bgp vrf default all neighbors 10.1.1.1 advertised-route: "\r\nPeer 10.1.1.1\
+      \ routes for address family IPv4 Unicast:\r\nBGP table version is 9, local router\
       \ ID is 10.2.2.2\r\nStatus: s-suppressed, x-deleted, S-stale, d-dampened, h-history,\
       \ *-valid, >-best\r\nPath type: i-internal, e-external, c-confed, l-local, a-aggregate,\
       \ r-redist, I-injected\r\nOrigin codes: i - IGP, e - EGP, ? - incomplete, |\
@@ -136,7 +135,7 @@ execute:
       \ soft reconfiguration for IPv4 Label Unicast not enabled on 10.1.1.1\r\n\r\n\
       Inbound soft reconfiguration for L2VPN EVPN not enabled on 10.1.1.1"
     show bgp vrf default all neighbors 10.1.1.1 routes: "\r\nPeer 10.1.1.1 routes\
-      \ for address family IPv4 Unicast:\r\nBGP table version is 8, local router ID\
+      \ for address family IPv4 Unicast:\r\nBGP table version is 9, local router ID\
       \ is 10.2.2.2\r\nStatus: s-suppressed, x-deleted, S-stale, d-dampened, h-history,\
       \ *-valid, >-best\r\nPath type: i-internal, e-external, c-confed, l-local, a-aggregate,\
       \ r-redist, I-injected\r\nOrigin codes: i - IGP, e - EGP, ? - incomplete, |\
@@ -244,19 +243,19 @@ execute:
       \ DLY 10 usec\r\n  reliability 14/255, txload 1/255, rxload 1/255\r\n  Encapsulation\
       \ ARPA, medium is broadcast\r\n  Port mode is routed\r\n  full-duplex, 1000\
       \ Mb/s\r\n  Auto-Negotiation is turned on\r\n  Auto-mdix is turned off\r\n \
-      \ EtherType is 0x0000 \r\n  1 minute input rate 136 bits/sec, 0 packets/sec\r\
-      \n  1 minute output rate 24 bits/sec, 0 packets/sec\r\n  Rx\r\n    25821 input\
-      \ packets 0 unicast packets 2 multicast packets\r\n    25819 broadcast packets\
-      \ 1654352 bytes\r\n  Tx\r\n    1435 output packets 0 unicast packets 1435 multicast\
-      \ packets\r\n    0 broadcast packets 308517 bytes\r\n\r\nEthernet2/1 is up\r\
-      \nadmin state is up, Dedicated Interface\r\n  Hardware:  Ethernet, address:\
-      \ 0000.0000.002f (bia fa16.3ebd.5255)\r\n  Internet Address is 10.0.1.2/24\r\
-      \n  MTU 1500 bytes, BW 1000000 Kbit, DLY 10 usec\r\n  reliability 255/255, txload\
-      \ 1/255, rxload 1/255\r\n  Encapsulation ARPA, medium is broadcast\r\n  Port\
-      \ mode is routed\r\n  full-duplex, 1000 Mb/s\r\n  Beacon is turned off\r\n \
-      \ Auto-Negotiation is turned off\r\n  Input flow-control is off, output flow-control\
+      \ EtherType is 0x0000 \r\n  1 minute input rate 160 bits/sec, 0 packets/sec\r\
+      \n  1 minute output rate 16 bits/sec, 0 packets/sec\r\n  Rx\r\n    84096 input\
+      \ packets 0 unicast packets 2 multicast packets\r\n    84094 broadcast packets\
+      \ 5383952 bytes\r\n  Tx\r\n    4673 output packets 0 unicast packets 4673 multicast\
+      \ packets\r\n    0 broadcast packets 1004687 bytes\r\n\r\nEthernet2/1 is down\
+      \ (Administratively down)\r\nadmin state is down, Dedicated Interface\r\n  Hardware:\
+      \  Ethernet, address: 0000.0000.002f (bia fa16.3ebd.5255)\r\n  Internet Address\
+      \ is 10.0.1.2/24\r\n  MTU 1500 bytes, BW 1000000 Kbit, DLY 10 usec\r\n  reliability\
+      \ 255/255, txload 1/255, rxload 1/255\r\n  Encapsulation ARPA, medium is broadcast\r\
+      \n  Port mode is routed\r\n  auto-duplex, 1000 Mb/s\r\n  Beacon is turned off\r\
+      \n  Auto-Negotiation is turned off\r\n  Input flow-control is off, output flow-control\
       \ is off\r\n  Auto-mdix is turned off\r\n  Switchport monitor is off \r\n  EtherType\
-      \ is 0x8100 \r\n  EEE (efficient-ethernet) : n/a\r\n  Last link flapped 23:52:55\r\
+      \ is 0x8100 \r\n  EEE (efficient-ethernet) : n/a\r\n  Last link flapped 00:00:33\r\
       \n  Last clearing of \"show interface\" counters never\r\n  1 interface resets\r\
       \n  Load-Interval #1: 0 seconds\r\n    0 seconds input rate 0 bits/sec, 0 packets/sec\r\
       \n    0 seconds output rate 0 bits/sec, 0 packets/sec\r\n    input rate 0 bps,\
@@ -279,7 +278,7 @@ execute:
       \ mode is routed\r\n  full-duplex, 1000 Mb/s\r\n  Beacon is turned off\r\n \
       \ Auto-Negotiation is turned off\r\n  Input flow-control is off, output flow-control\
       \ is off\r\n  Auto-mdix is turned off\r\n  Switchport monitor is off \r\n  EtherType\
-      \ is 0x8100 \r\n  EEE (efficient-ethernet) : n/a\r\n  Last link flapped 23:52:54\r\
+      \ is 0x8100 \r\n  EEE (efficient-ethernet) : n/a\r\n  Last link flapped 3d05h\r\
       \n  Last clearing of \"show interface\" counters never\r\n  1 interface resets\r\
       \n  Load-Interval #1: 0 seconds\r\n    0 seconds input rate 0 bits/sec, 0 packets/sec\r\
       \n    0 seconds output rate 0 bits/sec, 0 packets/sec\r\n    input rate 0 bps,\
@@ -3564,8 +3563,8 @@ execute:
       \ is up\r\nadmin state is up\r\n  Hardware: Loopback\r\n  Internet Address is\
       \ 10.2.2.2/32\r\n  MTU 1500 bytes, BW 8000000 Kbit, DLY 5000 usec\r\n  reliability\
       \ 255/255, txload 1/255, rxload 1/255\r\n  Encapsulation LOOPBACK, medium is\
-      \ broadcast\r\n  Port mode is routed\r\n  Auto-mdix is turned off\r\n    2915\
-      \ packets input 145874 bytes\r\n    0 multicast frames 0 compressed\r\n    0\
+      \ broadcast\r\n  Port mode is routed\r\n  Auto-mdix is turned off\r\n    9709\
+      \ packets input 485388 bytes\r\n    0 multicast frames 0 compressed\r\n    0\
       \ input errors 0 frame 0 overrun 0 fifo\r\n    0 packets output 0 bytes 0 underruns\r\
       \n    0 output errors 0 collisions 0 fifo\r\n    0 out_carrier_errors\r\n\r\n\
       loopback1 is up\r\nadmin state is up\r\n  Hardware: Loopback\r\n  Internet Address\
@@ -4032,20 +4031,20 @@ execute:
       \ trunk encapsulation: dot1q\r\n  Administrative private-vlan trunk normal VLANs:\
       \ none\r\n  Administrative private-vlan trunk private VLANs: none\r\n  Operational\
       \ private-vlan: none"
-    show inventory: "NAME: \"Chassis\",  DESCR: \"NX-OSv Chassis \"              \
-      \         \r\nPID: N7K-C7018           ,  VID: V00 ,  SN: TB00010000B      \
-      \    \r\n\r\nNAME: \"Slot 1\",  DESCR: \"NX-OSv Supervisor Module\"        \
-      \      \r\nPID: N7K-SUP1            ,  VID: V00 ,  SN: TM00010000B         \
-      \ \r\n\r\nNAME: \"Slot 2\",  DESCR: \"NX-OSv Ethernet Module\"             \
-      \   \r\nPID: N7K-F248XP-25       ,  VID: V00 ,  SN: TM00010000C          \r\n\
-      \r\nNAME: \"Slot 3\",  DESCR: \"NX-OSv Ethernet Module\"                \r\n\
-      PID: N7K-F248XP-25       ,  VID: V00 ,  SN: TM00010000D          \r\n\r\nNAME:\
-      \ \"Slot 4\",  DESCR: \"NX-OSv Ethernet Module\"                \r\nPID: N7K-F248XP-25\
-      \       ,  VID: V00 ,  SN: TM00010000E          \r\n\r\nNAME: \"Slot 33\", \
-      \ DESCR: \"NX-OSv Chassis Power Supply\"           \r\nPID:                \
-      \     ,  VID: V00 ,  SN:                      \r\n\r\nNAME: \"Slot 35\",  DESCR:\
-      \ \"NX-OSv Chassis Fan Module\"             \r\nPID:                     , \
-      \ VID: V00 ,  SN:"
+    show inventory: " \r\r\nNAME: \"Chassis\",  DESCR: \"NX-OSv Chassis \"       \
+      \                \r\nPID: N7K-C7018           ,  VID: V00 ,  SN: TB00010000B\
+      \          \r\n\r\nNAME: \"Slot 1\",  DESCR: \"NX-OSv Supervisor Module\"  \
+      \            \r\nPID: N7K-SUP1            ,  VID: V00 ,  SN: TM00010000B   \
+      \       \r\n\r\nNAME: \"Slot 2\",  DESCR: \"NX-OSv Ethernet Module\"       \
+      \         \r\nPID: N7K-F248XP-25       ,  VID: V00 ,  SN: TM00010000C      \
+      \    \r\n\r\nNAME: \"Slot 3\",  DESCR: \"NX-OSv Ethernet Module\"          \
+      \      \r\nPID: N7K-F248XP-25       ,  VID: V00 ,  SN: TM00010000D         \
+      \ \r\n\r\nNAME: \"Slot 4\",  DESCR: \"NX-OSv Ethernet Module\"             \
+      \   \r\nPID: N7K-F248XP-25       ,  VID: V00 ,  SN: TM00010000E          \r\n\
+      \r\nNAME: \"Slot 33\",  DESCR: \"NX-OSv Chassis Power Supply\"           \r\n\
+      PID:                     ,  VID: V00 ,  SN:                      \r\n\r\nNAME:\
+      \ \"Slot 35\",  DESCR: \"NX-OSv Chassis Fan Module\"             \r\nPID:  \
+      \                   ,  VID: V00 ,  SN:"
     show ip interface vrf all: "IP Interface Status for VRF \"default\"\r\nloopback0,\
       \ Interface status: protocol-up/link-up/admin-up, iod: 132,\r\n  IP address:\
       \ 10.2.2.2, IP subnet: 10.2.2.2/32 route-preference: 0, tag: 0 \r\n  IP broadcast\
@@ -4057,7 +4056,7 @@ execute:
       \ port): disabled\r\n  IP icmp port-unreachable: enabled\r\n  IP unicast reverse\
       \ path forwarding: none\r\n  IP load sharing: none \r\n  IP interface statistics\
       \ last reset: never\r\n  IP interface software stats: (sent/received/forwarded/originated/consumed)\r\
-      \n    Unicast packets    : 0/0/0/0/2916\r\n    Unicast bytes      : 0/0/0/0/145914\r\
+      \n    Unicast packets    : 0/0/0/0/9709\r\n    Unicast bytes      : 0/0/0/0/485388\r\
       \n    Multicast packets  : 0/0/0/0/0\r\n    Multicast bytes    : 0/0/0/0/0\r\
       \n    Broadcast packets  : 0/0/0/0/0\r\n    Broadcast bytes    : 0/0/0/0/0\r\
       \n    Labeled packets    : 0/0/0/0/0\r\n    Labeled bytes      : 0/0/0/0/0\r\
@@ -4078,21 +4077,21 @@ execute:
       \  : 0/0/0/0/0\r\n    Broadcast bytes    : 0/0/0/0/0\r\n    Labeled packets\
       \    : 0/0/0/0/0\r\n    Labeled bytes      : 0/0/0/0/0\r\n  WCCP Redirect outbound:\
       \ disabled\r\n  WCCP Redirect inbound: disabled\r\n  WCCP Redirect exclude:\
-      \ disabled\r\nEthernet2/1, Interface status: protocol-up/link-up/admin-up, iod:\
-      \ 36,\r\n  IP address: 10.0.1.2, IP subnet: 10.0.1.0/24 route-preference: 0,\
-      \ tag: 0 \r\n  IP broadcast address: 255.255.255.255\r\n  IP multicast groups\
-      \ locally joined: \r\n      224.0.0.6  224.0.0.5  \r\n  IP MTU: 1500 bytes (using\
-      \ link MTU)\r\n  IP primary address route-preference: 0, tag: 0\r\n  IP proxy\
-      \ ARP : disabled\r\n  IP Local Proxy ARP : disabled\r\n  IP multicast routing:\
-      \ disabled\r\n  IP icmp redirects: enabled\r\n  IP directed-broadcast: disabled\
-      \ \r\n  IP Forwarding: disabled \r\n  IP icmp unreachables (except port): disabled\r\
-      \n  IP icmp port-unreachable: enabled\r\n  IP unicast reverse path forwarding:\
-      \ none\r\n  IP load sharing: none \r\n  IP interface statistics last reset:\
-      \ never\r\n  IP interface software stats: (sent/received/forwarded/originated/consumed)\r\
-      \n    Unicast packets    : 2932/37/0/2932/74\r\n    Unicast bytes      : 196857/2424/0/196857/4848\r\
-      \n    Multicast packets  : 9892/9121/0/9892/18240\r\n    Multicast bytes   \
-      \ : 854208/914168/0/854208/914072\r\n    Broadcast packets  : 0/2/0/0/2\r\n\
-      \    Broadcast bytes    : 0/373/0/0/373\r\n    Labeled packets    : 0/0/0/0/0\r\
+      \ disabled\r\nEthernet2/1, Interface status: protocol-down/link-down/admin-down,\
+      \ iod: 36,\r\n  IP address: 10.0.1.2, IP subnet: 10.0.1.0/24 route-preference:\
+      \ 0, tag: 0 \r\n  IP broadcast address: 255.255.255.255\r\n  IP multicast groups\
+      \ locally joined: none\r\n  IP MTU: 1500 bytes (using link MTU)\r\n  IP primary\
+      \ address route-preference: 0, tag: 0\r\n  IP proxy ARP : disabled\r\n  IP Local\
+      \ Proxy ARP : disabled\r\n  IP multicast routing: disabled\r\n  IP icmp redirects:\
+      \ enabled\r\n  IP directed-broadcast: disabled \r\n  IP Forwarding: disabled\
+      \ \r\n  IP icmp unreachables (except port): disabled\r\n  IP icmp port-unreachable:\
+      \ enabled\r\n  IP unicast reverse path forwarding: none\r\n  IP load sharing:\
+      \ none \r\n  IP interface statistics last reset: never\r\n  IP interface software\
+      \ stats: (sent/received/forwarded/originated/consumed)\r\n    Unicast packets\
+      \    : 9728/84/0/9728/168\r\n    Unicast bytes      : 652528/5432/0/652528/10864\r\
+      \n    Multicast packets  : 32290/29725/0/32290/59448\r\n    Multicast bytes\
+      \    : 2788164/2979376/0/2788164/2979280\r\n    Broadcast packets  : 0/2/0/0/2\r\
+      \n    Broadcast bytes    : 0/373/0/0/373\r\n    Labeled packets    : 0/0/0/0/0\r\
       \n    Labeled bytes      : 0/0/0/0/0\r\n  WCCP Redirect outbound: disabled\r\
       \n  WCCP Redirect inbound: disabled\r\n  WCCP Redirect exclude: disabled\r\n\
       Ethernet2/2, Interface status: protocol-up/link-up/admin-up, iod: 37,\r\n  IP\
@@ -4106,10 +4105,10 @@ execute:
       \ enabled\r\n  IP unicast reverse path forwarding: none\r\n  IP load sharing:\
       \ none \r\n  IP interface statistics last reset: never\r\n  IP interface software\
       \ stats: (sent/received/forwarded/originated/consumed)\r\n    Unicast packets\
-      \    : 5/2954/0/5/2992\r\n    Unicast bytes      : 430/156710/0/430/159198\r\
-      \n    Multicast packets  : 9887/9117/0/9887/18232\r\n    Multicast bytes   \
-      \ : 853778/913900/0/853778/913804\r\n    Broadcast packets  : 0/2/0/0/2\r\n\
-      \    Broadcast bytes    : 0/373/0/0/373\r\n    Labeled packets    : 0/0/0/0/0\r\
+      \    : 6/9806/0/6/9903\r\n    Unicast bytes      : 488/519322/0/488/525586\r\
+      \n    Multicast packets  : 32271/29710/0/32271/59418\r\n    Multicast bytes\
+      \    : 2786578/2978444/0/2786578/2978348\r\n    Broadcast packets  : 0/2/0/0/2\r\
+      \n    Broadcast bytes    : 0/373/0/0/373\r\n    Labeled packets    : 0/0/0/0/0\r\
       \n    Labeled bytes      : 0/0/0/0/0\r\n  WCCP Redirect outbound: disabled\r\
       \n  WCCP Redirect inbound: disabled\r\n  WCCP Redirect exclude: disabled\r\n\
       \r\nIP Interface Status for VRF \"management\""
@@ -4117,86 +4116,72 @@ execute:
       (Process ID 1 VRF default)'
     show ip ospf database network detail vrf all: "        OSPF Router with ID (10.2.2.2)\
       \ (Process ID 1 VRF default)\r\n\r\n                Network Link States (Area\
-      \ 0.0.0.0)\r\n\r\n   LS age: 1524\r\n   Options: 0x22 (No TOS-capability, DC)\r\
-      \n   LS Type: Network Links\r\n   Link State ID: 10.0.1.1 (Designated Router\
-      \ address)\r\n   Advertising Router: 10.1.1.1\r\n   LS Seq Number: 0x8000002b\r\
-      \n   Checksum: 0x6277\r\n   Length: 32\r\n   Network Mask: /24\r\n         Attached\
-      \ Router: 10.1.1.1\r\n         Attached Router: 10.2.2.2\r\n\r\n   LS age: 1524\r\
-      \n   Options: 0x22 (No TOS-capability, DC)\r\n   LS Type: Network Links\r\n\
-      \   Link State ID: 10.0.2.1 (Designated Router address)\r\n   Advertising Router:\
-      \ 10.1.1.1\r\n   LS Seq Number: 0x8000002b\r\n   Checksum: 0x5781\r\n   Length:\
-      \ 32\r\n   Network Mask: /24\r\n         Attached Router: 10.1.1.1\r\n     \
-      \    Attached Router: 10.2.2.2"
+      \ 0.0.0.0)\r\n\r\n   LS age: 794\r\n   Options: 0x22 (No TOS-capability, DC)\r\
+      \n   LS Type: Network Links\r\n   Link State ID: 10.0.2.1 (Designated Router\
+      \ address)\r\n   Advertising Router: 10.1.1.1\r\n   LS Seq Number: 0x8000008c\r\
+      \n   Checksum: 0x94e2\r\n   Length: 32\r\n   Network Mask: /24\r\n         Attached\
+      \ Router: 10.1.1.1\r\n         Attached Router: 10.2.2.2"
     show ip ospf database opaque-area detail vrf all: '        OSPF Router with ID
       (10.2.2.2) (Process ID 1 VRF default)'
     show ip ospf database router detail vrf all: "        OSPF Router with ID (10.2.2.2)\
       \ (Process ID 1 VRF default)\r\n\r\n                Router Link States (Area\
-      \ 0.0.0.0)\r\n\r\n   LS age: 1523\r\n   Options: 0x22 (No TOS-capability, DC)\r\
+      \ 0.0.0.0)\r\n\r\n   LS age: 27\r\n   Options: 0x22 (No TOS-capability, DC)\r\
       \n   LS Type: Router Links\r\n   Link State ID: 10.1.1.1 \r\n   Advertising\
-      \ Router: 10.1.1.1\r\n   LS Seq Number: 0x80000032\r\n   Checksum: 0x5f28\r\n\
+      \ Router: 10.1.1.1\r\n   LS Seq Number: 0x80000094\r\n   Checksum: 0x85ab\r\n\
       \   Length: 60\r\n    Number of links: 3\r\n\r\n     Link connected to: a Stub\
       \ Network\r\n      (Link ID) Network/Subnet Number: 10.1.1.1\r\n      (Link\
       \ Data) Network Mask: 255.255.255.255\r\n       Number of TOS metrics: 0\r\n\
-      \         TOS   0 Metric: 1\r\n\r\n     Link connected to: a Transit Network\r\
-      \n      (Link ID) Designated Router address: 10.0.1.1\r\n      (Link Data) Router\
-      \ Interface address: 10.0.1.1\r\n       Number of TOS metrics: 0\r\n       \
-      \  TOS   0 Metric: 1\r\n\r\n     Link connected to: a Transit Network\r\n  \
-      \    (Link ID) Designated Router address: 10.0.2.1\r\n      (Link Data) Router\
-      \ Interface address: 10.0.2.1\r\n       Number of TOS metrics: 0\r\n       \
-      \  TOS   0 Metric: 1\r\n\r\n   LS age: 135\r\n   Options: 0x2 (No TOS-capability,\
-      \ No DC)\r\n   LS Type: Router Links\r\n   Link State ID: 10.2.2.2 \r\n   Advertising\
-      \ Router: 10.2.2.2\r\n   LS Seq Number: 0x80000034\r\n   Checksum: 0x65e6\r\n\
-      \   Length: 60\r\n    Number of links: 3\r\n\r\n     Link connected to: a Stub\
-      \ Network\r\n      (Link ID) Network/Subnet Number: 10.2.2.2\r\n      (Link\
-      \ Data) Network Mask: 255.255.255.255\r\n       Number of TOS metrics: 0\r\n\
-      \         TOS   0 Metric: 1\r\n\r\n     Link connected to: a Transit Network\r\
-      \n      (Link ID) Designated Router address: 10.0.1.1\r\n      (Link Data) Router\
-      \ Interface address: 10.0.1.2\r\n       Number of TOS metrics: 0\r\n       \
-      \  TOS   0 Metric: 40\r\n\r\n     Link connected to: a Transit Network\r\n \
-      \     (Link ID) Designated Router address: 10.0.2.1\r\n      (Link Data) Router\
-      \ Interface address: 10.0.2.2\r\n       Number of TOS metrics: 0\r\n       \
-      \  TOS   0 Metric: 40"
+      \         TOS   0 Metric: 1\r\n\r\n     Link connected to: a Stub Network\r\n\
+      \      (Link ID) Network/Subnet Number: 10.0.1.0\r\n      (Link Data) Network\
+      \ Mask: 255.255.255.0\r\n       Number of TOS metrics: 0\r\n         TOS   0\
+      \ Metric: 1\r\n\r\n     Link connected to: a Transit Network\r\n      (Link\
+      \ ID) Designated Router address: 10.0.2.1\r\n      (Link Data) Router Interface\
+      \ address: 10.0.2.1\r\n       Number of TOS metrics: 0\r\n         TOS   0 Metric:\
+      \ 1\r\n\r\n   LS age: 26\r\n   Options: 0x2 (No TOS-capability, No DC)\r\n \
+      \  LS Type: Router Links\r\n   Link State ID: 10.2.2.2 \r\n   Advertising Router:\
+      \ 10.2.2.2\r\n   LS Seq Number: 0x8000009f\r\n   Checksum: 0x2809\r\n   Length:\
+      \ 48\r\n    Number of links: 2\r\n\r\n     Link connected to: a Stub Network\r\
+      \n      (Link ID) Network/Subnet Number: 10.2.2.2\r\n      (Link Data) Network\
+      \ Mask: 255.255.255.255\r\n       Number of TOS metrics: 0\r\n         TOS \
+      \  0 Metric: 1\r\n\r\n     Link connected to: a Transit Network\r\n      (Link\
+      \ ID) Designated Router address: 10.0.2.1\r\n      (Link Data) Router Interface\
+      \ address: 10.0.2.2\r\n       Number of TOS metrics: 0\r\n         TOS   0 Metric:\
+      \ 40"
     show ip ospf database summary detail vrf all: '        OSPF Router with ID (10.2.2.2)
       (Process ID 1 VRF default)'
-    show ip ospf interface vrf all: " Ethernet2/1 is up, line protocol is up\r\n \
-      \   IP address 10.0.1.2/24\r\n    Process ID 1 VRF default, area 0.0.0.0\r\n\
-      \    Enabled by interface configuration\r\n    State BDR, Network type BROADCAST,\
-      \ cost 40\r\n    Index 2, Transmit delay 1 sec, Router Priority 1\r\n    Designated\
-      \ Router ID: 10.1.1.1, address: 10.0.1.1\r\n    Backup Designated Router ID:\
-      \ 10.2.2.2, address: 10.0.1.2\r\n    1 Neighbors, flooding to 1, adjacent with\
-      \ 1\r\n    Timer intervals: Hello 10, Dead 40, Wait 40, Retransmit 5\r\n   \
-      \   Hello timer due in 00:00:02\r\n    No authentication\r\n    Number of opaque\
-      \ link LSAs: 0, checksum sum 0\r\n Ethernet2/2 is up, line protocol is up\r\n\
-      \    IP address 10.0.2.2/24\r\n    Process ID 1 VRF default, area 0.0.0.0\r\n\
-      \    Enabled by interface configuration\r\n    State BDR, Network type BROADCAST,\
-      \ cost 40\r\n    Index 3, Transmit delay 1 sec, Router Priority 1\r\n    Designated\
-      \ Router ID: 10.1.1.1, address: 10.0.2.1\r\n    Backup Designated Router ID:\
-      \ 10.2.2.2, address: 10.0.2.2\r\n    1 Neighbors, flooding to 1, adjacent with\
-      \ 1\r\n    Timer intervals: Hello 10, Dead 40, Wait 40, Retransmit 5\r\n   \
-      \   Hello timer due in 00:00:00\r\n    No authentication\r\n    Number of opaque\
-      \ link LSAs: 0, checksum sum 0\r\n loopback0 is up, line protocol is up\r\n\
-      \    IP address 10.2.2.2/32\r\n    Process ID 1 VRF default, area 0.0.0.0\r\n\
-      \    Enabled by interface configuration\r\n    State LOOPBACK, Network type\
-      \ LOOPBACK, cost 1\r\n    Index 1"
+    show ip ospf interface vrf all: " Ethernet2/1 is down, line protocol is down\r\
+      \n    IP address 10.0.1.2/24\r\n    Process ID 1 VRF default, area 0.0.0.0\r\
+      \n    Enabled by interface configuration\r\n    State DOWN, Network type BROADCAST,\
+      \ cost 40\r\n    Index 2, Transmit delay 1 sec, Router Priority 1\r\n    No\
+      \ designated router on this network\r\n    No backup designated router on this\
+      \ network\r\n    0 Neighbors, flooding to 0, adjacent with 0\r\n    Timer intervals:\
+      \ Hello 10, Dead 40, Wait 40, Retransmit 5\r\n    No authentication\r\n    Number\
+      \ of opaque link LSAs: 0, checksum sum 0\r\n Ethernet2/2 is up, line protocol\
+      \ is up\r\n    IP address 10.0.2.2/24\r\n    Process ID 1 VRF default, area\
+      \ 0.0.0.0\r\n    Enabled by interface configuration\r\n    State BDR, Network\
+      \ type BROADCAST, cost 40\r\n    Index 3, Transmit delay 1 sec, Router Priority\
+      \ 1\r\n    Designated Router ID: 10.1.1.1, address: 10.0.2.1\r\n    Backup Designated\
+      \ Router ID: 10.2.2.2, address: 10.0.2.2\r\n    1 Neighbors, flooding to 1,\
+      \ adjacent with 1\r\n    Timer intervals: Hello 10, Dead 40, Wait 40, Retransmit\
+      \ 5\r\n      Hello timer due in 00:00:08\r\n    No authentication\r\n    Number\
+      \ of opaque link LSAs: 0, checksum sum 0\r\n loopback0 is up, line protocol\
+      \ is up\r\n    IP address 10.2.2.2/32\r\n    Process ID 1 VRF default, area\
+      \ 0.0.0.0\r\n    Enabled by interface configuration\r\n    State LOOPBACK, Network\
+      \ type LOOPBACK, cost 1\r\n    Index 1"
     show ip ospf mpls ldp interface vrf all: "loopback0 - Process ID 1 VRF default,\
       \ area 0.0.0.0\r\n    LDP Autoconfig not enabled\r\n    LDP Sync not enabled,\
       \ not required\r\n    State LOOPBACK, Network type LOOPBACK\r\nEthernet2/1 -\
       \ Process ID 1 VRF default, area 0.0.0.0\r\n    LDP Autoconfig not enabled\r\
-      \n    LDP Sync not enabled, not required\r\n    State BDR, Network type BROADCAST\r\
+      \n    LDP Sync not enabled, not required\r\n    State DOWN, Network type BROADCAST\r\
       \nEthernet2/2 - Process ID 1 VRF default, area 0.0.0.0\r\n    LDP Autoconfig\
       \ not enabled\r\n    LDP Sync not enabled, not required\r\n    State BDR, Network\
       \ type BROADCAST"
     show ip ospf neighbors detail vrf all: " Neighbor 10.1.1.1, interface address\
-      \ 10.0.1.1\r\n    Process ID 1 VRF default, in area 0.0.0.0 via interface Ethernet2/1\r\
-      \n    State is FULL, 5 state changes, last change 23:52:16\r\n    Neighbor priority\
-      \ is 1\r\n    DR is 10.0.1.1 BDR is 10.0.1.2\r\n    Hello options 0x12, dbd\
+      \ 10.0.2.1\r\n    Process ID 1 VRF default, in area 0.0.0.0 via interface Ethernet2/2\r\
+      \n    State is FULL, 5 state changes, last change 3d05h\r\n    Neighbor priority\
+      \ is 1\r\n    DR is 10.0.2.1 BDR is 10.0.2.2\r\n    Hello options 0x12, dbd\
       \ options 0x52\r\n    Last non-hello packet received never\r\n      Dead timer\
-      \ due in 00:00:41\r\n Neighbor 10.1.1.1, interface address 10.0.2.1\r\n    Process\
-      \ ID 1 VRF default, in area 0.0.0.0 via interface Ethernet2/2\r\n    State is\
-      \ FULL, 5 state changes, last change 23:52:16\r\n    Neighbor priority is 1\r\
-      \n    DR is 10.0.2.1 BDR is 10.0.2.2\r\n    Hello options 0x12, dbd options\
-      \ 0x52\r\n    Last non-hello packet received never\r\n      Dead timer due in\
-      \ 00:00:39"
+      \ due in 00:00:34"
     show ip ospf sham-links vrf all: "                        ^\r\n% Invalid command\
       \ at '^' marker."
     show ip ospf virtual-links vrf all: ''
@@ -4215,11 +4200,11 @@ execute:
       \ 0\r\n Number of areas is 1, 1 normal, 0 stub, 0 nssa\r\n Number of active\
       \ areas is 1, 1 normal, 0 stub, 0 nssa\r\n Install discard route for summarized\
       \ external routes.\r\n Install discard route for summarized internal routes.\r\
-      \n   Area BACKBONE(0.0.0.0) \r\n        Area has existed for 23:52:54\r\n  \
-      \      Interfaces in this area: 3 Active interfaces: 3\r\n        Passive interfaces:\
+      \n   Area BACKBONE(0.0.0.0) \r\n        Area has existed for 3d05h\r\n     \
+      \   Interfaces in this area: 3 Active interfaces: 2\r\n        Passive interfaces:\
       \ 0  Loopback interfaces: 1\r\n        No authentication available\r\n     \
-      \   SPF calculation has run 6 times\r\n         Last SPF ran for 0.000194s\r\
-      \n        Area ranges are\r\n        Number of LSAs: 4, checksum sum 0x17f06"
+      \   SPF calculation has run 7 times\r\n         Last SPF ran for 0.000160s\r\
+      \n        Area ranges are\r\n        Number of LSAs: 3, checksum sum 0x14296"
     show ipv6 interface vrf all: "IPv6 Interface Status for VRF \"default\"\r\n\r\n\
       IPv6 Interface Status for VRF \"management\""
     show module: "Mod  Ports  Module-Type                         Model          \
@@ -4246,10 +4231,10 @@ execute:
       \ Internal state:   Active with no standby\r\n\r\nOther supervisor (sup-1)\r\
       \n------------------------\r\n    Redundancy state:   N/A\r\n\r\n    Supervisor\
       \ state:   N/A\r\n      Internal state:   N/A\r\n\r\nSystem start time:    \
-      \      Mon Jan 14 16:43:31 2019\r\n\r\nSystem uptime:              0 days, 23\
-      \ hours, 53 minutes, 51 seconds\r\nKernel uptime:              0 days, 23 hours,\
-      \ 55 minutes, 3 seconds\r\nActive supervisor uptime:   0 days, 23 hours, 53\
-      \ minutes, 51 seconds"
+      \      Mon Jan 14 16:43:31 2019\r\n\r\nSystem uptime:              3 days, 5\
+      \ hours, 52 minutes, 26 seconds\r\nKernel uptime:              3 days, 5 hours,\
+      \ 53 minutes, 38 seconds\r\nActive supervisor uptime:   3 days, 5 hours, 52\
+      \ minutes, 26 seconds"
     show routing ipv6 vrf all: "IPv6 Routing Table for VRF \"default\"\r\n'*' denotes\
       \ best ucast next-hop\r\n'**' denotes best mcast next-hop\r\n'[x/y]' denotes\
       \ [preference/metric]\r\n\r\n\r\nIPv6 Routing Table for VRF \"management\"\r\
@@ -4258,202 +4243,24 @@ execute:
     show routing vrf all: "IP Route Table for VRF \"default\"\r\n'*' denotes best\
       \ ucast next-hop\r\n'**' denotes best mcast next-hop\r\n'[x/y]' denotes [preference/metric]\r\
       \n'%<string>' in via output denotes VRF <string>\r\n\r\n10.0.1.0/24, ubest/mbest:\
-      \ 1/0, attached\r\n    *via 10.0.1.2, Eth2/1, [0/0], 23:52:53, direct\r\n10.0.1.2/32,\
-      \ ubest/mbest: 1/0, attached\r\n    *via 10.0.1.2, Eth2/1, [0/0], 23:52:53,\
-      \ local\r\n10.0.2.0/24, ubest/mbest: 1/0, attached\r\n    *via 10.0.2.2, Eth2/2,\
-      \ [0/0], 23:52:52, direct\r\n10.0.2.2/32, ubest/mbest: 1/0, attached\r\n   \
-      \ *via 10.0.2.2, Eth2/2, [0/0], 23:52:52, local\r\n10.1.1.1/32, ubest/mbest:\
-      \ 2/0\r\n    *via 10.0.1.1, Eth2/1, [110/41], 23:51:55, ospf-1, intra\r\n  \
-      \  *via 10.0.2.1, Eth2/2, [110/41], 23:51:55, ospf-1, intra\r\n10.2.2.2/32,\
-      \ ubest/mbest: 2/0, attached\r\n    *via 10.2.2.2, Lo0, [0/0], 00:02:00, local\r\
-      \n    *via 10.2.2.2, Lo0, [0/0], 00:02:00, direct\r\n10.11.11.11/32, ubest/mbest:\
-      \ 1/0\r\n    *via 10.1.1.1, [200/0], 00:01:52, bgp-65000, internal, tag 65000,\
-      \ \r\n10.22.22.22/32, ubest/mbest: 2/0, attached\r\n    *via 10.22.22.22, Lo1,\
-      \ [0/0], 23:52:44, local\r\n    *via 10.22.22.22, Lo1, [0/0], 23:52:44, direct"
-    show running-config: " \r\r\n\r\n!Command: show running-config\r\n!Time: Tue Jan\
-      \ 15 16:37:11 2019\r\n\r\nversion 7.3(0)D1(1)\r\npower redundancy-mode redundant\r\
-      \nlicense grace-period\r\n\r\nhostname nx-osv-1\r\nvdc nx-osv-1 id 1\r\n  limit-resource\
-      \ module-type m1 m1xl m2xl f2e \r\n  allocate interface Ethernet2/1-48\r\n \
-      \ allocate interface Ethernet3/1-48\r\n  allocate interface Ethernet4/1-48\r\
-      \n  limit-resource vlan minimum 16 maximum 4094\r\n  limit-resource vrf minimum\
-      \ 2 maximum 4096\r\n  limit-resource port-channel minimum 0 maximum 768\r\n\
-      \  limit-resource u4route-mem minimum 96 maximum 96\r\n  limit-resource u6route-mem\
-      \ minimum 24 maximum 24\r\n  limit-resource m4route-mem minimum 58 maximum 58\r\
-      \n  limit-resource m6route-mem minimum 8 maximum 8\r\n\r\nfeature ospf\r\nfeature\
-      \ bgp\r\n\r\nusername admin password 5 $5$Otc7T0NC$K.ulnSZnSyXLrTGNBdtLgZJXEa8EeNx.BrdZ98XyK2C\
-      \  role network-admin\r\nno password strength-check\r\nip domain-lookup\r\n\
-      vlan dot1Q tag native\r\nsystem default switchport\r\nsystem jumbomtu 0\r\n\
-      no logging event trunk-status enable\r\ncopp profile strict\r\nsnmp-server user\
-      \ admin auth md5 0x328945d53e05e8e7207f8c20b142f0b7 priv 0x328945d53e05e8e7207f8c20b142f0b7\
-      \ localizedkey engineID 128:0:0:9:3:0:0:0:0:0:0\r\nrmon event 1 log description\
-      \ FATAL(1) owner PMON@FATAL\r\nrmon event 2 log description CRITICAL(2) owner\
-      \ PMON@CRITICAL\r\nrmon event 3 log description ERROR(3) owner PMON@ERROR\r\n\
-      rmon event 4 log description WARNING(4) owner PMON@WARNING\r\nrmon event 5 log\
-      \ description INFORMATION(5) owner PMON@INFO\r\nsnmp-server enable traps link\r\
-      \nsnmp-server enable traps link cisco-xcvr-mon-status-chg\r\n\r\nvlan 1\r\n\r\
-      \nvrf context management\r\n\r\ninterface mgmt0\r\n  vrf member management\r\
-      \n\r\ninterface Ethernet2/1\r\n  no switchport\r\n  mac-address 0000.0000.002f\r\
-      \n  ip address 10.0.1.2/24\r\n  ip router ospf 1 area 0.0.0.0\r\n  no shutdown\r\
-      \n\r\ninterface Ethernet2/2\r\n  no switchport\r\n  mac-address 0000.0000.002f\r\
-      \n  ip address 10.0.2.2/24\r\n  ip router ospf 1 area 0.0.0.0\r\n  no shutdown\r\
-      \n\r\ninterface Ethernet2/3\r\n  shutdown\r\n  no switchport\r\n  mac-address\
-      \ 0000.0000.002f\r\n\r\ninterface Ethernet2/4\r\n  shutdown\r\n  no switchport\r\
-      \n  mac-address 0000.0000.002f\r\n\r\ninterface Ethernet2/5\r\n  shutdown\r\n\
-      \  no switchport\r\n  mac-address 0000.0000.002f\r\n\r\ninterface Ethernet2/6\r\
-      \n  shutdown\r\n  no switchport\r\n  mac-address 0000.0000.002f\r\n\r\ninterface\
-      \ Ethernet2/7\r\n  shutdown\r\n  no switchport\r\n  mac-address 0000.0000.002f\r\
-      \n\r\ninterface Ethernet2/8\r\n  shutdown\r\n  no switchport\r\n  mac-address\
-      \ 0000.0000.002f\r\n\r\ninterface Ethernet2/9\r\n  shutdown\r\n  no switchport\r\
-      \n  mac-address 0000.0000.002f\r\n\r\ninterface Ethernet2/10\r\n  shutdown\r\
-      \n  no switchport\r\n  mac-address 0000.0000.002f\r\n\r\ninterface Ethernet2/11\r\
-      \n  shutdown\r\n  no switchport\r\n  mac-address 0000.0000.002f\r\n\r\ninterface\
-      \ Ethernet2/12\r\n  shutdown\r\n  no switchport\r\n  mac-address 0000.0000.002f\r\
-      \n\r\ninterface Ethernet2/13\r\n  shutdown\r\n  no switchport\r\n  mac-address\
-      \ 0000.0000.002f\r\n\r\ninterface Ethernet2/14\r\n  shutdown\r\n  no switchport\r\
-      \n  mac-address 0000.0000.002f\r\n\r\ninterface Ethernet2/15\r\n  shutdown\r\
-      \n  no switchport\r\n  mac-address 0000.0000.002f\r\n\r\ninterface Ethernet2/16\r\
-      \n  shutdown\r\n  no switchport\r\n  mac-address 0000.0000.002f\r\n\r\ninterface\
-      \ Ethernet2/17\r\n  shutdown\r\n  no switchport\r\n  mac-address 0000.0000.002f\r\
-      \n\r\ninterface Ethernet2/18\r\n  shutdown\r\n  no switchport\r\n  mac-address\
-      \ 0000.0000.002f\r\n\r\ninterface Ethernet2/19\r\n  shutdown\r\n  no switchport\r\
-      \n  mac-address 0000.0000.002f\r\n\r\ninterface Ethernet2/20\r\n  shutdown\r\
-      \n  no switchport\r\n  mac-address 0000.0000.002f\r\n\r\ninterface Ethernet2/21\r\
-      \n  shutdown\r\n  no switchport\r\n  mac-address 0000.0000.002f\r\n\r\ninterface\
-      \ Ethernet2/22\r\n  shutdown\r\n  no switchport\r\n  mac-address 0000.0000.002f\r\
-      \n\r\ninterface Ethernet2/23\r\n  shutdown\r\n  no switchport\r\n  mac-address\
-      \ 0000.0000.002f\r\n\r\ninterface Ethernet2/24\r\n  shutdown\r\n  no switchport\r\
-      \n  mac-address 0000.0000.002f\r\n\r\ninterface Ethernet2/25\r\n  shutdown\r\
-      \n  no switchport\r\n  mac-address 0000.0000.002f\r\n\r\ninterface Ethernet2/26\r\
-      \n  shutdown\r\n  no switchport\r\n  mac-address 0000.0000.002f\r\n\r\ninterface\
-      \ Ethernet2/27\r\n  shutdown\r\n  no switchport\r\n  mac-address 0000.0000.002f\r\
-      \n\r\ninterface Ethernet2/28\r\n  shutdown\r\n  no switchport\r\n  mac-address\
-      \ 0000.0000.002f\r\n\r\ninterface Ethernet2/29\r\n  shutdown\r\n  no switchport\r\
-      \n  mac-address 0000.0000.002f\r\n\r\ninterface Ethernet2/30\r\n  shutdown\r\
-      \n  no switchport\r\n  mac-address 0000.0000.002f\r\n\r\ninterface Ethernet2/31\r\
-      \n  shutdown\r\n  no switchport\r\n  mac-address 0000.0000.002f\r\n\r\ninterface\
-      \ Ethernet2/32\r\n  shutdown\r\n  no switchport\r\n  mac-address 0000.0000.002f\r\
-      \n\r\ninterface Ethernet2/33\r\n  shutdown\r\n  no switchport\r\n  mac-address\
-      \ 0000.0000.002f\r\n\r\ninterface Ethernet2/34\r\n  shutdown\r\n  no switchport\r\
-      \n  mac-address 0000.0000.002f\r\n\r\ninterface Ethernet2/35\r\n  shutdown\r\
-      \n  no switchport\r\n  mac-address 0000.0000.002f\r\n\r\ninterface Ethernet2/36\r\
-      \n  shutdown\r\n  no switchport\r\n  mac-address 0000.0000.002f\r\n\r\ninterface\
-      \ Ethernet2/37\r\n  shutdown\r\n  no switchport\r\n  mac-address 0000.0000.002f\r\
-      \n\r\ninterface Ethernet2/38\r\n  shutdown\r\n  no switchport\r\n  mac-address\
-      \ 0000.0000.002f\r\n\r\ninterface Ethernet2/39\r\n  shutdown\r\n  no switchport\r\
-      \n  mac-address 0000.0000.002f\r\n\r\ninterface Ethernet2/40\r\n  shutdown\r\
-      \n  no switchport\r\n  mac-address 0000.0000.002f\r\n\r\ninterface Ethernet2/41\r\
-      \n  shutdown\r\n  no switchport\r\n  mac-address 0000.0000.002f\r\n\r\ninterface\
-      \ Ethernet2/42\r\n  shutdown\r\n  no switchport\r\n  mac-address 0000.0000.002f\r\
-      \n\r\ninterface Ethernet2/43\r\n  shutdown\r\n  no switchport\r\n  mac-address\
-      \ 0000.0000.002f\r\n\r\ninterface Ethernet2/44\r\n  shutdown\r\n  no switchport\r\
-      \n  mac-address 0000.0000.002f\r\n\r\ninterface Ethernet2/45\r\n  shutdown\r\
-      \n  no switchport\r\n  mac-address 0000.0000.002f\r\n\r\ninterface Ethernet2/46\r\
-      \n  shutdown\r\n  no switchport\r\n  mac-address 0000.0000.002f\r\n\r\ninterface\
-      \ Ethernet2/47\r\n  shutdown\r\n  no switchport\r\n  mac-address 0000.0000.002f\r\
-      \n\r\ninterface Ethernet2/48\r\n  shutdown\r\n  no switchport\r\n  mac-address\
-      \ 0000.0000.002f\r\n\r\ninterface Ethernet3/1\r\n  shutdown\r\n  no switchport\r\
-      \n  medium p2p\r\n\r\ninterface Ethernet3/2\r\n  shutdown\r\n  no switchport\r\
-      \n  medium p2p\r\n\r\ninterface Ethernet3/3\r\n  shutdown\r\n  no switchport\r\
-      \n  medium p2p\r\n\r\ninterface Ethernet3/4\r\n  shutdown\r\n  no switchport\r\
-      \n  medium p2p\r\n\r\ninterface Ethernet3/5\r\n  shutdown\r\n  no switchport\r\
-      \n  medium p2p\r\n\r\ninterface Ethernet3/6\r\n  shutdown\r\n  no switchport\r\
-      \n  medium p2p\r\n\r\ninterface Ethernet3/7\r\n  shutdown\r\n  no switchport\r\
-      \n  medium p2p\r\n\r\ninterface Ethernet3/8\r\n  shutdown\r\n  no switchport\r\
-      \n  medium p2p\r\n\r\ninterface Ethernet3/9\r\n  shutdown\r\n  no switchport\r\
-      \n  medium p2p\r\n\r\ninterface Ethernet3/10\r\n  shutdown\r\n  no switchport\r\
-      \n  medium p2p\r\n\r\ninterface Ethernet3/11\r\n  shutdown\r\n  no switchport\r\
-      \n  medium p2p\r\n\r\ninterface Ethernet3/12\r\n  shutdown\r\n  no switchport\r\
-      \n  medium p2p\r\n\r\ninterface Ethernet3/13\r\n  shutdown\r\n  no switchport\r\
-      \n  medium p2p\r\n\r\ninterface Ethernet3/14\r\n  shutdown\r\n  no switchport\r\
-      \n  medium p2p\r\n\r\ninterface Ethernet3/15\r\n  shutdown\r\n  no switchport\r\
-      \n  medium p2p\r\n\r\ninterface Ethernet3/16\r\n  shutdown\r\n  no switchport\r\
-      \n  medium p2p\r\n\r\ninterface Ethernet3/17\r\n  shutdown\r\n  no switchport\r\
-      \n  medium p2p\r\n\r\ninterface Ethernet3/18\r\n  shutdown\r\n  no switchport\r\
-      \n  medium p2p\r\n\r\ninterface Ethernet3/19\r\n  shutdown\r\n  no switchport\r\
-      \n  medium p2p\r\n\r\ninterface Ethernet3/20\r\n  shutdown\r\n  no switchport\r\
-      \n  medium p2p\r\n\r\ninterface Ethernet3/21\r\n  shutdown\r\n  no switchport\r\
-      \n  medium p2p\r\n\r\ninterface Ethernet3/22\r\n  shutdown\r\n  no switchport\r\
-      \n  medium p2p\r\n\r\ninterface Ethernet3/23\r\n  shutdown\r\n  no switchport\r\
-      \n  medium p2p\r\n\r\ninterface Ethernet3/24\r\n  shutdown\r\n  no switchport\r\
-      \n  medium p2p\r\n\r\ninterface Ethernet3/25\r\n  shutdown\r\n  no switchport\r\
-      \n  medium p2p\r\n\r\ninterface Ethernet3/26\r\n  shutdown\r\n  no switchport\r\
-      \n  medium p2p\r\n\r\ninterface Ethernet3/27\r\n  shutdown\r\n  no switchport\r\
-      \n  medium p2p\r\n\r\ninterface Ethernet3/28\r\n  shutdown\r\n  no switchport\r\
-      \n  medium p2p\r\n\r\ninterface Ethernet3/29\r\n  shutdown\r\n  no switchport\r\
-      \n  medium p2p\r\n\r\ninterface Ethernet3/30\r\n  shutdown\r\n  no switchport\r\
-      \n  medium p2p\r\n\r\ninterface Ethernet3/31\r\n  shutdown\r\n  no switchport\r\
-      \n  medium p2p\r\n\r\ninterface Ethernet3/32\r\n  shutdown\r\n  no switchport\r\
-      \n  medium p2p\r\n\r\ninterface Ethernet3/33\r\n  shutdown\r\n  no switchport\r\
-      \n  medium p2p\r\n\r\ninterface Ethernet3/34\r\n  shutdown\r\n  no switchport\r\
-      \n  medium p2p\r\n\r\ninterface Ethernet3/35\r\n  shutdown\r\n  no switchport\r\
-      \n  medium p2p\r\n\r\ninterface Ethernet3/36\r\n  shutdown\r\n  no switchport\r\
-      \n  medium p2p\r\n\r\ninterface Ethernet3/37\r\n  shutdown\r\n  no switchport\r\
-      \n  medium p2p\r\n\r\ninterface Ethernet3/38\r\n  shutdown\r\n  no switchport\r\
-      \n  medium p2p\r\n\r\ninterface Ethernet3/39\r\n  shutdown\r\n  no switchport\r\
-      \n  medium p2p\r\n\r\ninterface Ethernet3/40\r\n  shutdown\r\n  no switchport\r\
-      \n  medium p2p\r\n\r\ninterface Ethernet3/41\r\n  shutdown\r\n  no switchport\r\
-      \n  medium p2p\r\n\r\ninterface Ethernet3/42\r\n  shutdown\r\n  no switchport\r\
-      \n  medium p2p\r\n\r\ninterface Ethernet3/43\r\n  shutdown\r\n  no switchport\r\
-      \n  medium p2p\r\n\r\ninterface Ethernet3/44\r\n  shutdown\r\n  no switchport\r\
-      \n  medium p2p\r\n\r\ninterface Ethernet3/45\r\n  shutdown\r\n  no switchport\r\
-      \n  medium p2p\r\n\r\ninterface Ethernet3/46\r\n  shutdown\r\n  no switchport\r\
-      \n  medium p2p\r\n\r\ninterface Ethernet3/47\r\n  shutdown\r\n  no switchport\r\
-      \n  medium p2p\r\n\r\ninterface Ethernet3/48\r\n  shutdown\r\n  no switchport\r\
-      \n  medium p2p\r\n\r\ninterface Ethernet4/1\r\n  switchport\r\n  no shutdown\r\
-      \n\r\ninterface Ethernet4/2\r\n  switchport\r\n  no shutdown\r\n\r\ninterface\
-      \ Ethernet4/3\r\n  switchport\r\n  no shutdown\r\n\r\ninterface Ethernet4/4\r\
-      \n  switchport\r\n  no shutdown\r\n\r\ninterface Ethernet4/5\r\n  switchport\r\
-      \n  no shutdown\r\n\r\ninterface Ethernet4/6\r\n  switchport\r\n  no shutdown\r\
-      \n\r\ninterface Ethernet4/7\r\n  switchport\r\n  no shutdown\r\n\r\ninterface\
-      \ Ethernet4/8\r\n  switchport\r\n  no shutdown\r\n\r\ninterface Ethernet4/9\r\
-      \n  switchport\r\n  no shutdown\r\n\r\ninterface Ethernet4/10\r\n  switchport\r\
-      \n  no shutdown\r\n\r\ninterface Ethernet4/11\r\n  switchport\r\n  no shutdown\r\
-      \n\r\ninterface Ethernet4/12\r\n  switchport\r\n  no shutdown\r\n\r\ninterface\
-      \ Ethernet4/13\r\n  switchport\r\n  no shutdown\r\n\r\ninterface Ethernet4/14\r\
-      \n  switchport\r\n  no shutdown\r\n\r\ninterface Ethernet4/15\r\n  switchport\r\
-      \n  no shutdown\r\n\r\ninterface Ethernet4/16\r\n  switchport\r\n  no shutdown\r\
-      \n\r\ninterface Ethernet4/17\r\n  switchport\r\n  no shutdown\r\n\r\ninterface\
-      \ Ethernet4/18\r\n  switchport\r\n  no shutdown\r\n\r\ninterface Ethernet4/19\r\
-      \n  switchport\r\n  no shutdown\r\n\r\ninterface Ethernet4/20\r\n  switchport\r\
-      \n  no shutdown\r\n\r\ninterface Ethernet4/21\r\n  switchport\r\n  no shutdown\r\
-      \n\r\ninterface Ethernet4/22\r\n  switchport\r\n  no shutdown\r\n\r\ninterface\
-      \ Ethernet4/23\r\n  switchport\r\n  no shutdown\r\n\r\ninterface Ethernet4/24\r\
-      \n  switchport\r\n  no shutdown\r\n\r\ninterface Ethernet4/25\r\n  switchport\r\
-      \n  no shutdown\r\n\r\ninterface Ethernet4/26\r\n  switchport\r\n  no shutdown\r\
-      \n\r\ninterface Ethernet4/27\r\n  switchport\r\n  no shutdown\r\n\r\ninterface\
-      \ Ethernet4/28\r\n  switchport\r\n  no shutdown\r\n\r\ninterface Ethernet4/29\r\
-      \n  switchport\r\n  no shutdown\r\n\r\ninterface Ethernet4/30\r\n  switchport\r\
-      \n  no shutdown\r\n\r\ninterface Ethernet4/31\r\n  switchport\r\n  no shutdown\r\
-      \n\r\ninterface Ethernet4/32\r\n  switchport\r\n  no shutdown\r\n\r\ninterface\
-      \ Ethernet4/33\r\n  switchport\r\n  no shutdown\r\n\r\ninterface Ethernet4/34\r\
-      \n  switchport\r\n  no shutdown\r\n\r\ninterface Ethernet4/35\r\n  switchport\r\
-      \n  no shutdown\r\n\r\ninterface Ethernet4/36\r\n  switchport\r\n  no shutdown\r\
-      \n\r\ninterface Ethernet4/37\r\n  switchport\r\n  no shutdown\r\n\r\ninterface\
-      \ Ethernet4/38\r\n  switchport\r\n  no shutdown\r\n\r\ninterface Ethernet4/39\r\
-      \n  switchport\r\n  no shutdown\r\n\r\ninterface Ethernet4/40\r\n  switchport\r\
-      \n  no shutdown\r\n\r\ninterface Ethernet4/41\r\n  switchport\r\n  no shutdown\r\
-      \n\r\ninterface Ethernet4/42\r\n  switchport\r\n  no shutdown\r\n\r\ninterface\
-      \ Ethernet4/43\r\n  switchport\r\n  no shutdown\r\n\r\ninterface Ethernet4/44\r\
-      \n  switchport\r\n  no shutdown\r\n\r\ninterface Ethernet4/45\r\n  switchport\r\
-      \n  no shutdown\r\n\r\ninterface Ethernet4/46\r\n  switchport\r\n  no shutdown\r\
-      \n\r\ninterface Ethernet4/47\r\n  switchport\r\n  no shutdown\r\n\r\ninterface\
-      \ Ethernet4/48\r\n  switchport\r\n  no shutdown\r\n\r\ninterface loopback0\r\
-      \n  ip address 10.2.2.2/32\r\n  ip router ospf 1 area 0.0.0.0\r\n\r\ninterface\
-      \ loopback1\r\n  ip address 10.22.22.22/32\r\nline console\r\n  exec-timeout\
-      \ 0\r\n  terminal width  511\r\nline vty\r\nboot kickstart bootflash:/titanium-d1-kickstart.7.3.0.D1.1.bin\r\
-      \nboot system bootflash:/titanium-d1.7.3.0.D1.1.bin \r\nrouter ospf 1\r\n  router-id\
-      \ 10.2.2.2\r\nrouter bgp 65000\r\n  router-id 10.2.2.2\r\n  address-family ipv4\
-      \ unicast\r\n    network 10.22.22.22/32\r\n  neighbor 10.1.1.1\r\n    remote-as\
-      \ 65000\r\n    update-source loopback0\r\n    address-family ipv4 unicast\r\n\
-      no logging console"
+      \ 1/0\r\n    *via 10.0.2.1, Eth2/2, [110/41], 00:00:40, ospf-1, intra\r\n10.0.2.0/24,\
+      \ ubest/mbest: 1/0, attached\r\n    *via 10.0.2.2, Eth2/2, [0/0], 3d05h, direct\r\
+      \n10.0.2.2/32, ubest/mbest: 1/0, attached\r\n    *via 10.0.2.2, Eth2/2, [0/0],\
+      \ 3d05h, local\r\n10.1.1.1/32, ubest/mbest: 1/0\r\n    *via 10.0.2.1, Eth2/2,\
+      \ [110/41], 00:00:40, ospf-1, intra\r\n10.2.2.2/32, ubest/mbest: 2/0, attached\r\
+      \n    *via 10.2.2.2, Lo0, [0/0], 2d06h, local\r\n    *via 10.2.2.2, Lo0, [0/0],\
+      \ 2d06h, direct\r\n10.11.11.11/32, ubest/mbest: 1/0\r\n    *via 10.1.1.1, [200/0],\
+      \ 00:00:40, bgp-65000, internal, tag 65000, \r\n10.22.22.22/32, ubest/mbest:\
+      \ 2/0, attached\r\n    *via 10.22.22.22, Lo1, [0/0], 3d05h, local\r\n    *via\
+      \ 10.22.22.22, Lo1, [0/0], 3d05h, direct"
     show running-config | inc peer-policy: ''
     show running-config | inc peer-session: ''
     show vdc detail: "\r\nSwitchwide mode is m1 f1 m1xl f2 m2xl f2e f3 m3 \r\n\r\n\
       vdc id: 1\r\nvdc name: nx-osv-1\r\nvdc state: active\r\nvdc mac address: fa:16:3e:bd:52:83\r\
       \nvdc ha policy: RELOAD\r\nvdc dual-sup ha policy: SWITCHOVER\r\nvdc boot Order:\
       \ 1\r\nvdc create time: Mon Jan 14 16:43:32 2019\r\nvdc reload count: 0\r\n\
-      vdc uptime: 0 day(s), 23 hour(s), 53 minute(s), 50 second(s)\r\nvdc restart\
-      \ count: 0\r\nvdc type: Ethernet\r\nvdc supported linecards: m1 m1xl m2xl f2e"
+      vdc uptime: 3 day(s), 5 hour(s), 52 minute(s), 25 second(s)\r\nvdc restart count:\
+      \ 0\r\nvdc type: Ethernet\r\nvdc supported linecards: m1 m1xl m2xl f2e"
     show vdc membership status: "Flags : b - breakout port\r\n---------------------------------\r\
       \n\r\nvdc_id: 0 vdc_name: Unallocated interfaces:\r\nPort        Status    \
       \  \r\n----        ----------  \r\n\r\nvdc_id: 1 vdc_name: nx-osv-1 interfaces:\r\
@@ -4508,7 +4315,7 @@ execute:
       \  cisco NX-OSv Chassis (\"NX-OSv Supervisor Module\")\r\n  QEMU Virtual CPU\
       \ version 2.5 with 3064740 kB of memory.\r\n  Processor Board ID TM00010000B\r\
       \n\r\n  Device name: nx-osv-1\r\n  bootflash:    3184776 kB\r\n\r\nKernel uptime\
-      \ is 0 day(s), 23 hour(s), 55 minute(s), 2 second(s)\r\n\r\n\r\nplugin\r\n \
+      \ is 3 day(s), 5 hour(s), 53 minute(s), 37 second(s)\r\n\r\n\r\nplugin\r\n \
       \ Core Plugin, Ethernet Plugin\r\n\r\nActive Package(s)"
     show vrf: "VRF-Name                           VRF-ID State   Reason          \
       \              \r\ndefault                                 1 Up      --    \

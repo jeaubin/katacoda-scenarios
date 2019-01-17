@@ -27,7 +27,7 @@ We could not provide enough device, so we have "virtual". They react the same
 as normal devices, with limited commands. Click the following command to
 connect to the device.
 
-`mock_device_cli --os nxos --mock_data_dir /root/katacoda-scenarios/robot/original_data/nxos --state execute`{{execute}}
+`mock_device_cli --os nxos --mock_data_dir /root/katacoda-scenarios/compare/initial_data/nxos --state execute`{{execute}}
 
 We can send a few show commands to understand the topology and configuration
 
@@ -39,5 +39,5 @@ We can send a few show commands to understand the topology and configuration
 
 The same can be done on the other device
 
-`mock_device_cli --os iosxe --mock_data_dir  /root/katacoda-scenarios/robot/original_data/csr --state execute`{{execute}}
+`mock_device_cli --os iosxe --mock_data_dir /root/katacoda-scenarios/compare/initial_data/csr/ --state execute`{{execute}}
 
