@@ -14,8 +14,8 @@ We can see Ospf and interface operational state has changed.
 
 With the editor let's open the two files:
 
-* ./diff_ospf_nxos_nx-osv-1_ops.txt
-* ./diff_interface_nxos_nx-osv-1_ops.txt
+* diff_ospf_nxos_nx-osv-1_ops.txt
+* diff_interface_nxos_nx-osv-1_ops.txt
 
 We can see right away that interface Ethernet2/1 is down which is affecting our
 Ospf neighbor. 
