@@ -1,2 +1,2 @@
-export replay=second
-export speed=500"
+export replay=/root/katacoda-scenarios/robot/cli_disaster_recording/
+export speed=300

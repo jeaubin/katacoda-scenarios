@@ -1,3 +1,2 @@
-export replay=/root/katacoda-scenarios/robot/initial_recording
-export speed=500
-
+export replay=/root/katacoda-scenarios/robot/cli_initial_recording/
+export speed=300

@@ -1,10 +1,11 @@
-**NOTE:** the installation of all of the libraries is happening in the
-background, and may take a minute to complete.
+**NOTE: the installation of all of the libraries is happening in the
+background, and may take a minute to complete**
 
 ## Goal
+
 Congratulation, you are in charge of the following network!
 
-<picture>
+![topology](topology.png)
 
 The network is performing as expected. Your task is to make sure it remains up
 and running and if anything changes to react quickly. (Sounds familiar?)
@@ -12,6 +13,7 @@ and running and if anything changes to react quickly. (Sounds familiar?)
 Let's connect to our device and send a few show commands.
 
 ## Getting Ready
+
 To get you started quickly, we've created a virtualenv and installed Genie.
 
 You can activate the virtualenv by running the following commands
@@ -22,7 +24,8 @@ You can activate the virtualenv by running the following commands
 ## Manual investigation
 
 We could not provide enough device, so we have "virtual". They react the same
-as normal devices, with limited commands.
+as normal devices, with limited commands. Click the following command to
+connect to the device.
 
 `mock_device_cli --os nxos --mock_data_dir /root/katacoda-scenarios/robot/original_data/nxos --state execute`{{execute}}
 

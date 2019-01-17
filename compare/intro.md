@@ -1,9 +1,9 @@
-# Use Cisco Genie to learn and verify your network with RobotFramework
+# Use Cisco Genie to learn and verify your network
 
 This Katacode training simulates a real life scenario of a network engineer.
 
-A major obstacle faced by all network engineers is keeping their network up and
-health. Genie can help with that!
+A major obstacle faced by all network engineers is keeping their network
+operational and healthy. Genie can help with that!
 
 1) Take a snapshot of your network when your network is in good state
 
@@ -11,16 +11,23 @@ health. Genie can help with that!
 
 3) When something changed, be alerted.
 
-Genie provides multiple ways to do this,  one of them is with
-[RobotFramework](https://robotframework.org). RobotFramework is an English
-keyword based automation framework, with a [Genie
-Library](https://pubhub.devnetcloud.com/media/pyats-packages/docs/genie/robot/index.html)
-to automate your network.
+Genie provides multiple ways to do this; this training will demonstrate two ways:
+
+1) Genie linux cli interacts with your devices and capture the state of it, all
+without any programing knowledge. Just like any other linux command.
+
+2) [RobotFramework](https://robotframework.org) with [Genie robot
+library]((https://pubhub.devnetcloud.com/media/pyats-packages/docs/genie/robot/index.html)
+is a great way to get started with automation.
+
+RobotFramework is an English keyword based automation framework and we've added Genie
+robot library to automate your network.
 
 ## Objectives
 
 In this learning lab you are going to learn:
 
+* How to use Genie Linux cli
 * How to use Genie Robot Library
 * Take snapshot of your devices and compare them to see what has changed
 

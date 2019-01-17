@@ -6,25 +6,19 @@ step.
 
 **Yes!**
 
-Let's use automation to figure out what happened!  Take a look at the robot
-testscript. open the `katacoda-scenario/robot/compare_snapshot.robot` in the
-editor windows and examing it's content.
+`genie learn ospf interface bgp platform --testbed-file tb.yaml --output disaster`{{execute}}
 
-The script will:
+`genie diff learnt disaster`{{execute}}
 
-* Load Genie Library
-* Connect to the two devices
-* Learn bgp, interface, platform, ospf and the device configuration and save it to file.
-* And compare the new snapshot with the original snapshot!
+We can see Ospf and interface operational state has changed.
 
-`robot --outputdir  /var/www/html/compare_run  /root/katacoda-scenarios/robot/compare_snapshot.robot`{{execute}}
+With the editor let's open the two files:
 
-We can see the robot script has failed. Open the log and you can see the
-configuration was changed which is changing the operation state of the
-protocol.
+* ./diff_ospf_nxos_nx-osv-1_ops.txt
+* ./diff_interface_nxos_nx-osv-1_ops.txt
 
-Log can be viewed here: https://[[HOST_SUBDOMAIN]]-80-[[KATACODA_HOST]].environments.katacoda.com/compare_run/log.html
+We can see right away that interface Ethernet2/1 is down which is affecting our
+Ospf neighbor. 
 
-We can now revert the configuration and rerun our script to make sure we are
-back in business!
+We can now put our focus on fixing this issue.
 

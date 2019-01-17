@@ -1,5 +1,5 @@
 {
-  "title": "Operational state comparison with Genie and RobotFramework",
+  "title": "Genie Compares device operational",
   "time": "10 minutes",
   "description": "Compare Operational state of a device before and after modification",
   "details": {
@@ -14,12 +14,22 @@
         "text": "step2.md"
       },
       {
-        "title": "Step 3 - With Genie - Collect information",
+        "title": "Step 3 - With Genie Cli - Collect information",
         "text": "step3.md",
 	"code": "step2-env.sh"
       },
       {
         "title": "Step 4 - With Genie - ...all is good",
+        "text": "step4.md",
+	"code": "step4-env.sh"
+      },
+      {
+        "title": "Step 5 - With Genie Robot - Collect information",
+        "text": "step3.md",
+	"code": "step2-env.sh"
+      },
+      {
+        "title": "Step 6 - With Genie Robot - ...all is good",
         "text": "step4.md",
 	"code": "step4-env.sh"
       }
