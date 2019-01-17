@@ -26,7 +26,7 @@
       {
         "title": "Step 5 - With Genie Robot - Collect information",
         "text": "step3.md",
-	"code": "step2-env.sh"
+	"code": "step3-env.sh"
       },
       {
         "title": "Step 6 - With Genie Robot - ...all is good",
