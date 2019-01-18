@@ -1,2 +1,2 @@
-export replay=/root/katacoda-scenarios/compare/cli_disaster_recording
-export speed=500
+export unicon_replay=/root/katacoda-scenarios/compare/cli_disaster_recording
+export unicon_speed=500
