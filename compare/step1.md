@@ -5,7 +5,7 @@ background, and may take a minute to complete**
 
 Congratulation, you are in charge of the following network!
 
-![topology](topology.png)
+![topology](https://raw.githubusercontent.com/jeaubin/katacoda-scenarios/master/compare/topology.png)
 
 The network is performing as expected. Your task is to make sure it remains up
 and running and if anything changes to react quickly. (Sounds familiar?)
