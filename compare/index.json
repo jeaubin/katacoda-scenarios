@@ -50,12 +50,12 @@
   },
   "assets": {
       "client": [{
-          "file": "initial_compare.robot",
+          "file": "initial_snapshot.robot",
           "target": "~/"
         }
       ],
       "host01": [{
-          "file": "initial_compare.robot",
+          "file": "initial_snapshot.robot",
           "target": "~/"
         }
       ]

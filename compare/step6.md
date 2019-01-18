@@ -1,14 +1,13 @@
 **Oh No**
 
-All of sudden, the network is not operating as expected! Without any
-automation, can you figure out what happened without going to the previous
-step. 
+All of sudden, the network is not operating as expected!  With automation, can
+you figure out what happened without going to the previous step?
 
 **Yes!**
 
-Let's use automation to figure out what happened!  Take a look at the robot
-testscript. open the `katacoda-scenario/compare/compare_snapshot.robot` in the
-editor windows and examing it's content.
+Take a look at the robot testscript. open the
+`katacoda-scenario/compare/compare_snapshot.robot` in the editor windows and
+examing it's content.
 
 The script will:
 

@@ -1,8 +1,7 @@
 **Oh No**
 
-All of sudden, the network is not operating as expected! Without any
-automation, can you figure out what happened without going to the previous
-step. 
+All of sudden, the network is not operating as expected!  Can you figure out
+what happened without going to the previous step?
 
 **Yes!**
 
@@ -20,5 +19,5 @@ With the editor let's open the two files:
 We can see right away that interface Ethernet2/1 is down which is affecting our
 Ospf neighbor. 
 
-We can now put our focus on fixing this issue.
+Once the problem is pinpointed its much easier to resolve.
 
