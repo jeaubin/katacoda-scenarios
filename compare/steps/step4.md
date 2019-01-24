@@ -1,6 +1,6 @@
 **Oh No**
 
-![oh No!](ohNo.png)
+![oh No!](https://github.com/CiscoTestAutomation/CL-DevNet-2595/blob/master/ohNo.png)
 
 All of sudden, the network is not operating as expected!  Can you figure out
 what happened without going to the previous step?
