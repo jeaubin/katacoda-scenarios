@@ -9,8 +9,8 @@ Library        genie.libs.robot.GenieRobot
 
 *** Variables ***
 # Define the pyATS testbed file to use for this run
-${testbed}     /root/katacoda-scenarios/compare/tb.yaml 
-#${testbed}     tb.yaml 
+#${testbed}     /root/katacoda-scenarios/compare/tb.yaml 
+${testbed}     tb.yaml 
 
 *** Test Cases ***
 # Creating test cases from available keywords.
