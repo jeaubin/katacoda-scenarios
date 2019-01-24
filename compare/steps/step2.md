@@ -1,5 +1,7 @@
 **Oh no!**
 
+![oh No!](ohNo.png)
+
 All of sudden, the network is not operating as expected! Without any
 automation, can you figure out what happened without going to the previous
 step? 
