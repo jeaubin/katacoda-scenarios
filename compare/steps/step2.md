@@ -1,6 +1,6 @@
 **Oh no!**
 
-![oh No!](https://github.com/CiscoTestAutomation/CL-DevNet-2595/blob/master/ohNo.png)
+![oh No](https://raw.githubusercontent.com/CiscoTestAutomation/CL-DevNet-2595/master/ohNo.png)
 
 All of sudden, the network is not operating as expected! Without any
 automation, can you figure out what happened without going to the previous
